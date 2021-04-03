@@ -9,7 +9,7 @@
  */
 export default function BiographyImage(props) {
   return (
-    <div className="profile-picture">
+    <div className="picture-container">
       <img {...props}></img>
       <p onClick={props.onClick} className="text-overlay">Read More</p>
     </div>
