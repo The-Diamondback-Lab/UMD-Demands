@@ -2,9 +2,10 @@
 
 import { Fragment, Component } from 'react';
 
-import biographyData from '../data/biographies.json';
-import '../styles/biography.css';
 import BiographyElement from './BiographyElement';
+
+import biographyData from '../../data/biographies.json';
+import './styles.css';
 
 export default class Biographies extends Component {
   render() {
