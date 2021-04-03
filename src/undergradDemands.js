@@ -1,4 +1,6 @@
-﻿import React, { Component } from "react";
+/* eslint-disable jsx-a11y/alt-text */
+
+import React, { Component } from "react";
 import { Accordion, Card } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 

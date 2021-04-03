@@ -1,6 +1,9 @@
+/* eslint-disable jsx-a11y/alt-text */
+
 import React, { Component } from "react";
 import { Accordion, Card } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+
 import icon1 from './Assets/numbericons/1.png';
 import icon2 from './Assets/numbericons/2.png';
 import icon3 from './Assets/numbericons/3.png';
@@ -97,7 +100,7 @@ export class GradIssues extends Component {
 
             <Card>
               <Accordion.Toggle as={Card.Header} eventKey="5" style={{ cursor: 'pointer', backgroundColor: '#e51d37', color: 'white', borderColor: 'black', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
-                <div style={{ flex: 8, alignSelf: 'center', fontSize: 20 }}>Prioritizing minority enrollment by doubling the current enrollment of Black students from Prince George’s County and DC by 2025.</div>
+                <div style={{ flex: 8, alignSelf: 'center', fontSize: 20 }}>Prioritizing minority enrollment by doubling the current enrollment of Black students from Prince Georgeï¿½s County and DC by 2025.</div>
                 <div style={{ flex: .1 }}></div>
                 <div style={{ flex: 0.5 }}><img src={icon6} style={{ width: '75%' }} /></div>
               </Accordion.Toggle>
@@ -169,7 +172,7 @@ export class GradIssues extends Component {
 
             <Card>
               <Accordion.Toggle as={Card.Header} eventKey="11" style={{ cursor: 'pointer', backgroundColor: '#E21833', color: 'white', borderColor: 'black', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
-                <div style={{ flex: 8, alignSelf: 'center', fontSize: 20 }}>Create partnerships and scholarships with Prince George’s County schools to increase the number of Prince George’s County students accepted and admitted to UMD, especially Black students.</div>
+                <div style={{ flex: 8, alignSelf: 'center', fontSize: 20 }}>Create partnerships and scholarships with Prince Georgeï¿½s County schools to increase the number of Prince Georgeï¿½s County students accepted and admitted to UMD, especially Black students.</div>
                 <div style={{ flex: .1 }}></div>
                 <div style={{ flex: 0.5 }}><img src={icon12} style={{ width: '100%' }} /></div>
               </Accordion.Toggle>
@@ -265,7 +268,7 @@ export class GradIssues extends Component {
 
             <Card>
               <Accordion.Toggle as={Card.Header} eventKey="19" style={{ cursor: 'pointer', backgroundColor: '#E21833', color: 'white', borderColor: 'black', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
-                <div style={{ flex: 8, alignSelf: 'center', fontSize: 20 }}>Include teaching about the contributions that Prince George’s County residents have made to UMD, along with the Black history of this institution (ties to slavery, discrimination against Black people to admittance into UMD until the 1936 Murray v Maryland Decision).</div>
+                <div style={{ flex: 8, alignSelf: 'center', fontSize: 20 }}>Include teaching about the contributions that Prince Georgeï¿½s County residents have made to UMD, along with the Black history of this institution (ties to slavery, discrimination against Black people to admittance into UMD until the 1936 Murray v Maryland Decision).</div>
                 <div style={{ flex: .1 }}></div>
                 <div style={{ flex: 0.5 }}><img src={icon20} style={{ width: '100%' }} /></div>
               </Accordion.Toggle>
@@ -334,7 +337,7 @@ export class GradIssues extends Component {
                 <Card.Body>This is second tab body</Card.Body>
               </Accordion.Collapse>
             </Card>
-            
+
           </Accordion>
         </div>
       </>
