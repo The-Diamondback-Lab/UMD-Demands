@@ -68,3 +68,8 @@
   text-align: center;
   color: white;
 }
+
+.profile-picture > p.profile-title {
+  font-size: 1.5em;
+  color: black;
+}

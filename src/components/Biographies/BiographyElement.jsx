@@ -16,7 +16,7 @@ export default function BiographyElement(props) {
 
   return (
     <Fragment>
-      <BiographyImage src={props.picturePath} onClick={onOpen} />
+      <BiographyImage src={props.picturePath} onClick={onOpen} profileTitle={props.name} />
       <BiographyModal onHide={onClose} show={modalShow} title={props.name} body={props.data} />
     </Fragment>
   )
