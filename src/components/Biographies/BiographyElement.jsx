@@ -16,7 +16,7 @@ export default function BiographyElement(props) {
 
   return (
     <div className="profile">
-      <BiographyImage src={props.picturePath} onClick={onOpen} profileTitle={props.name} />
+      <BiographyImage src={props.picturePath} onClick={onOpen} />
       <p className="profile-title">{props.name}</p>
       <BiographyModal onHide={onClose} show={modalShow} title={props.name} body={props.data} />
     </div>
