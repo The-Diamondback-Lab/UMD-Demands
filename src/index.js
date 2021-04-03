@@ -4,10 +4,13 @@ import './index.css';
 import GradIssues from './gradDemands';
 import UndergradIssues from './undergradDemands';
 import reportWebVitals from './reportWebVitals';
+import homepage from './landingPage';
 
 ReactDOM.render(
   <React.StrictMode>
     <div>
+      <homepage />
+      <div> &nbsp;</div>
       <GradIssues />
       <div> &nbsp;</div>
       <UndergradIssues />
@@ -15,6 +18,7 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
