@@ -1,4 +1,4 @@
-import { Fragment, useState } from 'react';
+import { useState } from 'react';
 import BiographyImage from './BiographyImage';
 import BiographyModal from './BiographyModal';
 
@@ -15,10 +15,11 @@ export default function BiographyElement(props) {
   const onOpen = () => setModalShow(true);
 
   return (
-    <Fragment>
+    <div className="profile">
       <BiographyImage src={props.picturePath} onClick={onOpen} profileTitle={props.name} />
+      <p className="profile-title">{props.name}</p>
       <BiographyModal onHide={onClose} show={modalShow} title={props.name} body={props.data} />
-    </Fragment>
+    </div>
   )
 }
 
