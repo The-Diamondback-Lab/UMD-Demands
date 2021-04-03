@@ -4,18 +4,20 @@ import { Fragment, Component } from 'react';
 
 import biographyData from '../data/biographies.json';
 import '../styles/biography.css';
+import BiographyElement from './BiographyElement';
 
 export default class Biographies extends Component {
   render() {
-    let picElems = biographyData.map((person, i) =>
-      <img
-        key={`organizer-pic-${i}`}
-        src={person.picturePath}
-        className="profile-picture"></img>
-    );
+    let elems = biographyData.map((person, i) => {
+      return <BiographyElement
+        key={`organizer-biography-${i}`}
+        {...person}
+      ></BiographyElement>
+    });
+
     return <Fragment>
       <div id="bio-container">
-        {picElems}
+        {elems}
       </div>
     </Fragment>
   }
