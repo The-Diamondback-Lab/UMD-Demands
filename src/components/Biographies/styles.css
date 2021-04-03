@@ -1,13 +1,17 @@
 #bio-container {
+  margin: 1em;
+
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .profile-picture {
   width: 150px;
   height: 150px;
+  margin: 0px 1em;
 
   border-radius: 50%;
 
