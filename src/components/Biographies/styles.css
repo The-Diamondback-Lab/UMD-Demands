@@ -8,11 +8,11 @@
   filter: brightness(100%);
   -webkit-filter: brightness(100%);
 
-  -webkit-transition: all 325ms ease;
-  -moz-transition: all 325ms ease;
-  -o-transition: all 325ms ease;
-  -ms-transition: all 325ms ease;
-  transition: all 325ms ease;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  transition: all 250ms ease;
 }
 
 .profile-picture:hover {
