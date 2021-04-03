@@ -1,0 +1,26 @@
+#bio-container {
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+
+  border-radius: 50%;
+  margin: 10px;
+
+  filter: brightness(100%);
+  -webkit-filter: brightness(100%);
+
+  -webkit-transition: all 325ms ease;
+  -moz-transition: all 325ms ease;
+  -o-transition: all 325ms ease;
+  -ms-transition: all 325ms ease;
+  transition: all 325ms ease;
+}
+
+.profile-picture:hover {
+  filter: brightness(50%);
+  -webkit-filter: brightness(50%);
+
+  cursor: pointer;
+}
