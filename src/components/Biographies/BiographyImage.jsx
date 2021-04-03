@@ -8,8 +8,5 @@
  * @param {React.ImgHTMLAttributes<HTMLImageElement>} props
  */
 export default function BiographyImage(props) {
-  return <img
-    {...props}
-    className="profile-picture"
-  ></img>;
+  return (<img {...props} className="profile-picture"></img>);
 }
