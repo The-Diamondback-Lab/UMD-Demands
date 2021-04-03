@@ -11,7 +11,7 @@ export default function BiographyImage(props) {
   return (
     <div className="profile-picture">
       <img {...props}></img>
-      <p>Read More</p>
+      <p className="text-overlay">Read More</p>
     </div>
   );
 }
