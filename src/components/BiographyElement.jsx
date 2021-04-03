@@ -15,14 +15,10 @@ export default function BiographyElement(props) {
   const [ modalShow, setModalShow ] = useState(false);
 
   // When modal's "close" button is clicked, hide the modal
-  const onClose = function() {
-    setModalShow(false)
-  };
+  const onClose = () => setModalShow(false);
   // This is an arbitrary option, as anything can make this modal show.
   // Though, for our purpose, clicking on an image will trigger this event
-  const onOpen = function() {
-    setModalShow(true);
-  }
+  const onOpen = () => setModalShow(true);
 
   return (
     <Fragment>
