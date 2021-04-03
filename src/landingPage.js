@@ -1,7 +1,7 @@
 import React from 'react';
 import landingPageImg from './Assets/homepageBackground.jpg';
 
-class Homepage extends React.Component {
+class LandingPage extends React.Component {
   render() {
     return (
       <div>
@@ -12,4 +12,4 @@ class Homepage extends React.Component {
   }
 }
 
-export default Homepage;
+export default LandingPage;

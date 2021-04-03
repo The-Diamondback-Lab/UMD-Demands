@@ -4,12 +4,12 @@ import './index.css';
 import GradIssues from './gradDemands';
 import UndergradIssues from './undergradDemands';
 import reportWebVitals from './reportWebVitals';
-import Homepage from './landingPage';
+import LandingPage from './LandingPage';
 
 ReactDOM.render(
   <React.StrictMode>
     <div>
-      <Homepage />
+      <LandingPage />
       <div> &nbsp;</div>
       <GradIssues />
       <div> &nbsp;</div>
