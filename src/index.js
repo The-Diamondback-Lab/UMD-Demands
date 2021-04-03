@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import GradIssues from './gradDemands';
-import UndergradIssues from './undergradDemands';
+import GradIssues from './GradDemands';
+import UndergradIssues from './UndergradDemands';
 import Biographies from './components/Biographies';
 import LandingPage from './LandingPage';
 
