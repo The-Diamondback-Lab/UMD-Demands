@@ -15,9 +15,22 @@
 
   border-radius: 50%;
 
+  /* Visually, this is redundant given the filter rules in `.profile-picture > img`
+  but is necessary to get the text overlay centered on this div */
+  filter: brightness(100%);
+  -webkit-filter: brightness(100%);
+}
+
+.profile-picture > img {
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+
+  /* Image shows up normally */
   filter: brightness(100%);
   -webkit-filter: brightness(100%);
 
+  /* Transition rules */
   -webkit-transition: all 250ms ease;
   -moz-transition: all 250ms ease;
   -o-transition: all 250ms ease;
@@ -25,9 +38,31 @@
   transition: all 250ms ease;
 }
 
-.profile-picture:hover {
-  filter: brightness(50%);
-  -webkit-filter: brightness(50%);
+.profile-picture:hover > img {
+  /* Image dims a bit when hovered on */
+  filter: brightness(25%);
+  -webkit-filter: brightness(25%);
 
   cursor: pointer;
+}
+
+.profile-picture > p {
+  /* Hide text overlay */
+  display: none;
+}
+
+.profile-picture:hover > p {
+  /* Text overlay is displayed on hover */
+  display: block;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+
+  /* Ensures the cursor remains a pointer even if it goes over this element */
+  cursor: pointer;
+
+  text-align: center;
+  color: white;
 }
