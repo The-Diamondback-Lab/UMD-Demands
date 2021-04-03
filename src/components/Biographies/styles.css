@@ -60,6 +60,8 @@
   transform: translate(-50%, -50%);
   z-index: 1;
 
+  font-size: 1.5em;
+
   /* Ensures the cursor remains a pointer even if it goes over this element */
   cursor: pointer;
 
