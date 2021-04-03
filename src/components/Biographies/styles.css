@@ -1,9 +1,15 @@
+#bio-container {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-around;
+}
+
 .profile-picture {
   width: 150px;
   height: 150px;
 
   border-radius: 50%;
-  margin: 10px;
 
   filter: brightness(100%);
   -webkit-filter: brightness(100%);
