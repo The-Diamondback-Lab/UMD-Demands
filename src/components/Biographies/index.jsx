@@ -4,6 +4,7 @@ import { Fragment, Component } from 'react';
 
 import BiographyElement from './BiographyElement';
 
+import "bootstrap/dist/css/bootstrap.min.css";
 import biographyData from '../../data/biographies.json';
 import './styles.css';
 

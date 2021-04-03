@@ -1,15 +1,9 @@
-/* eslint-disable jsx-a11y/alt-text */
-
 import { Fragment, useState } from 'react';
+import BiographyImage from './BiographyImage';
 import BiographyModal from './BiographyModal';
 
-import "bootstrap/dist/css/bootstrap.min.css";
-
 /**
- * Returns an image element representing a profile picture for a person. When
- * the image is clicked, a modal is shown containing info for that person.
- *
- * @param {BiographyObject} props
+ * @param {BiographyElementProps} props
  */
 export default function BiographyElement(props) {
   const [ modalShow, setModalShow ] = useState(false);
@@ -22,25 +16,15 @@ export default function BiographyElement(props) {
 
   return (
     <Fragment>
-      <img
-        src={props.picturePath}
-        className="profile-picture"
-        onClick={onOpen}
-      ></img>
-      <BiographyModal
-        onHide={onClose}
-        show={modalShow}
-        title={props.name}
-        body={props.data}
-      />
+      <BiographyImage src={props.picturePath} onClick={onOpen} />
+      <BiographyModal onHide={onClose} show={modalShow} title={props.name} body={props.data} />
     </Fragment>
   )
 }
 
 /**
- * @typedef BiographyObject
- * @prop {string} name The name of the person
- * @prop {string} picturePath Path to a profile picture
- * @prop {string} data Data/content for this person's biography, can be
- * plaintext or HTML.
+ * @typedef BiographyElementProps
+ * @prop {string} picturePath Path to profile picture
+ * @prop {string} name Name of person
+ * @prop {string} body Plaintext or HTMl biographical data
  */
