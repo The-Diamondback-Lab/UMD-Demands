@@ -59,3 +59,7 @@
   background-color: white;
   color: black;
 }
+.demand-list.white .item .icon {
+  background-color: #e21833;
+  color: white;
+}
