@@ -4,8 +4,7 @@
     {
       "type": "firefox",
       "request": "attach",
-      "name": "Attach to Firefox",
-      "webRoot": "${workspaceFolder}"
+      "name": "Attach to Firefox"
     }
   ],
   "compounds": []
