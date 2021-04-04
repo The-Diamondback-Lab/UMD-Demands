@@ -9,3 +9,8 @@ body, #root {
   max-width: 1280px;
   margin: auto;
 }
+
+#main-container h1 {
+  font-family: 'IBM Plex Sans', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0.75em 0;
+}

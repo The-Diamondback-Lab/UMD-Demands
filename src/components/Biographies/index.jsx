@@ -14,7 +14,7 @@ export default function Biographies() {
 
   return (
     <div id="bio-container">
-      <h3>Meet the Organizers</h3>
+      <h1>Meet the Organizers</h1>
       <div id="bio-elems">{elems}</div>
     </div>
   );
