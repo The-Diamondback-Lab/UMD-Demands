@@ -2,7 +2,12 @@
   {
     "name": "Aleksandar Kaja Fareed",
     "picturePath": "https://boredhumans.b-cdn.net/faces2/10.jpg",
-    "body": ""
+    "body": "",
+    "gallery": [
+      "https://dbknews-assets.s3.amazonaws.com/umddemands.dbknews.com/biographies/adam1.jpg",
+      "https://dbknews-assets.s3.amazonaws.com/umddemands.dbknews.com/biographies/adam2.jpg",
+      "https://dbknews-assets.s3.amazonaws.com/umddemands.dbknews.com/biographies/adam3.jpg"
+    ]
   },
   {
     "name": "Erdmann Lou Steliana",
