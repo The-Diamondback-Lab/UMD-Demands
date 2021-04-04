@@ -32,4 +32,5 @@ export default function BiographyModal(props) {
  * @prop {() => void} onHide Callback function for when modal is closed/hidden
  * @prop {string} title Title of the modal
  * @prop {string} body Plaintext or HTML data for the modal's body
+ * @prop {string[]} [gallery] Array of picture paths for a gallery
  */

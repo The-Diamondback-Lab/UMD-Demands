@@ -26,7 +26,8 @@ export default function BiographyElement(props) {
         onHide={onClose}
         show={modalShow}
         title={props.name}
-        body={props.body || lorem.generateSentences(15)} />
+        body={props.body || lorem.generateSentences(15)}
+        gallery={props.gallery} />
     </div>
   )
 }
@@ -36,4 +37,5 @@ export default function BiographyElement(props) {
  * @prop {string} picturePath Path to profile picture
  * @prop {string} name Name of person
  * @prop {string} body Plaintext or HTMl biographical data
+ * @prop {string[]} [gallery] Array of picture paths for a gallery
  */
