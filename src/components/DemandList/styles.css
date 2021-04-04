@@ -20,10 +20,12 @@
   color: white;
   font-family: 'IBM Plex Sans', Tahoma, Geneva, Verdana, sans-serif;
 
+  padding: 0.75em 1em;
+
   display: grid;
   grid-template-columns: [icon] 50px [header] auto;
   align-items: center;
-  column-gap: 1.25rem;
+  column-gap: 1.25em;
 }
 
 .demand-list .item .icon {
