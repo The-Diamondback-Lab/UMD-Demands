@@ -8,8 +8,8 @@ import LandingPage from './components/LandingPage';
 
 ReactDOM.render(
   <React.StrictMode>
-    <div>
-      <LandingPage />
+    <LandingPage />
+    <div id="main-container">
       <Biographies />
       <GradIssues />
       <div> &nbsp;</div>
