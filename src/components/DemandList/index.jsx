@@ -6,8 +6,7 @@ import { Accordion, Card } from 'react-bootstrap';
 import './styles.css';
 
 import { LoremIpsum } from 'lorem-ipsum';
-import { Component } from 'react';
-import { Fragment } from 'react';
+import { Component, Fragment } from 'react';
 
 const lorem = new LoremIpsum();
 
@@ -55,7 +54,7 @@ export default class DemandList extends Component {
     let listClassNames = listClasses.join(' ');
 
     let elems = this.state.data.map((o, i) => (
-      <div key={`UNDERGRADUATE-DEMAND-${i+1}`} className="item">
+      <div key={`demand-list-item-${i+1}`} className="item">
         <Accordion>
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey={`${i+1}`} className="title">
