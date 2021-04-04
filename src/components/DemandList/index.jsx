@@ -47,12 +47,20 @@ export default class DemandList extends Component {
       return "Error fetching data";
     }
 
+    let listClasses = ['demand-list'];
+    let imgPrefix = '';
+    if (this.props.theme === 'white') {
+      listClasses.push('white');
+      imgPrefix = 'alt';
+    }
+    let listClassNames = listClasses.join(' ');
+
     let elems = this.state.data.map((o, i) => (
       <div key={`UNDERGRADUATE-DEMAND-${i+1}`} className="item">
         <Accordion>
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey={`${i+1}`} className="title">
-              <div style={{ flex: 0.5 }}><img src={`/assets/numbericons/${i+1}.png`} style={{ width: '75%' }} /></div>
+              <div style={{ flex: 0.5 }}><img src={`/assets/numbericons/${imgPrefix}${i+1}.png`} style={{ width: '75%' }} /></div>
               <div style={{ flex: .1 }}></div>
               <div style={{ flex: 8, alignSelf: 'center', fontSize: 20 }}>{o.header}</div>
             </Accordion.Toggle>
@@ -66,6 +74,6 @@ export default class DemandList extends Component {
       </div>
     ));
 
-    return (<div className="demand-list">{elems}</div>);
+    return (<div className={listClassNames}>{elems}</div>);
   }
 }

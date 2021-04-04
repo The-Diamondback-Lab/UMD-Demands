@@ -12,6 +12,7 @@ ReactDOM.render(
     <LandingPage />
     <div id="main-container">
       <DemandList resourceUrl="/data/undergraduate-demands.json" />
+      <DemandList resourceUrl="/data/graduate-demands.json" theme="white" />
       <Biographies />
       <GradIssues />
       <div> &nbsp;</div>
