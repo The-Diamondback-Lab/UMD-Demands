@@ -7,6 +7,7 @@ import './styles.css';
 
 import { LoremIpsum } from 'lorem-ipsum';
 import { Component } from 'react';
+import { Fragment } from 'react';
 
 const lorem = new LoremIpsum();
 
@@ -71,6 +72,11 @@ export default class DemandList extends Component {
       </div>
     ));
 
-    return (<div className={listClassNames}>{elems}</div>);
+    return (
+      <Fragment>
+        <h1>{this.props.header}</h1>
+        <div className={listClassNames}>{elems}</div>
+      </Fragment>
+    );
   }
 }
