@@ -13,15 +13,13 @@ import icon6 from '../../Assets/numbericons/alt6.png';
 import icon7 from '../../Assets/numbericons/alt7.png';
 import icon8 from '../../Assets/numbericons/alt8.png';
 
-import plex from '../../fonts/plexSans.ttf';
-
-const headerStyle = { cursor: 'pointer', backgroundColor: 'white', color: 'black', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', fontFamily: plex }
+const headerStyle = { cursor: 'pointer', backgroundColor: 'white', color: 'black', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', fontFamily: 'IBM Plex Sans' }
 
 export class UndergradIssues extends Component {
   render() {
     return (
       <>
-        <h1 style={{ display: 'flex' , width: '100%' , paddingLeft: '10%', paddingRight: '10%' , fontFamily: plex }}>GRADUATE LEVEL DEMANDS</h1>
+        <h1 style={{ display: 'flex' , width: '100%' , paddingLeft: '10%', paddingRight: '10%' , fontFamily: 'IBM Plex Sans' }}>GRADUATE LEVEL DEMANDS</h1>
         <div style={{ display: 'flex', width: '100%', justifyContent: 'center', paddingLeft: '10%', paddingRight: '10%' }}>
           <Accordion>
             <Card>

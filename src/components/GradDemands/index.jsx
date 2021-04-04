@@ -30,17 +30,15 @@ import icon23 from '../../Assets/numbericons/23.png';
 import icon24 from '../../Assets/numbericons/24.png';
 import icon25 from '../../Assets/numbericons/25.png';
 
-import plex from '../../fonts/plexSans.ttf';
-
 let accordionPadding = '10%';
 let iconWidth = '75%';
-const headerStyle = { cursor: 'pointer', backgroundColor: '#E21833', color: 'white', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' , fontFamily: plex }
+const headerStyle = { cursor: 'pointer', backgroundColor: '#E21833', color: 'white', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' , fontFamily: 'IBM Plex Sans' }
 
 export class GradIssues extends Component {
   render() {
     return (
       <>
-        <h1 style={{ display: 'flex', width: '100%', paddingLeft: '10%', paddingRight: '10%', fontFamily: plex }}>UNDERGRADUATE LEVEL DEMANDS</h1>
+        <h1 style={{ display: 'flex', width: '100%', paddingLeft: '10%', paddingRight: '10%', fontFamily: 'IBM Plex Sans' }}>UNDERGRADUATE LEVEL DEMANDS</h1>
         <div style={{ display: 'flex', width: '100%', justifyContent: 'center', paddingLeft: '10%', paddingRight: '10%' }}>
           <Accordion>
             <Card>
