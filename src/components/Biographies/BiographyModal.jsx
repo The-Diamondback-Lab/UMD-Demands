@@ -13,7 +13,7 @@ export default function BiographyModal(props) {
   let bodyGallery = null;
   if (props.gallery) {
     bodyGallery = (
-      <Carousel showThumbs={false} infiniteLoop>
+      <Carousel showThumbs={false} infiniteLoop showStatus={false}>
         {props.gallery.map((path, i) => (
           <img key={`carousel-item-${i}`} className="carousel-item" src={path}></img>
         ))}
