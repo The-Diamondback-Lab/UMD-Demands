@@ -77,3 +77,25 @@
     font-size: 1.2em;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .demand-list .item .title {
+    padding: 0.75em 1.25em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .demand-list .item .icon {
+    width: 2em;
+    height: 2em;
+
+    font-weight: bold;
+    font-size: 1.25em;
+  }
+
+  .demand-list .item .header {
+    margin: 0.6em 0;
+  }
+}
