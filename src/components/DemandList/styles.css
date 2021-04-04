@@ -63,6 +63,13 @@
   line-height: 1.75em;
 }
 
+/* Tablet styles */
+@media screen and (max-width: 1023px) {
+  .demand-list {
+    font-size: 1.2em;
+  }
+}
+
 /* WHITE THEME */
 
 .demand-list.white .item .title {
