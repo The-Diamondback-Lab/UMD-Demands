@@ -27,8 +27,8 @@
 }
 
 .demand-list .item .icon {
-  width: 50px;
-  height: 50px;
+  width: 2em;
+  height: 2em;
 
   grid-column: icon;
 
@@ -38,7 +38,7 @@
   justify-content: center;
 
   font-weight: bold;
-  font-size: 25px;
+  font-size: 1.5em;
 
   /* Specifically chose 1.25rem (root em) in order to be symmetric with
   the card's padding */
