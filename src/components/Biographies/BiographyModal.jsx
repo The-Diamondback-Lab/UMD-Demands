@@ -15,9 +15,7 @@ export default function BiographyModal(props) {
     bodyGallery = (
       <Carousel>
         {props.gallery.map((path, i) => (
-          <div key={`carousel-item-${i}`}>
-            <img src={path}></img>
-          </div>
+          <img key={`carousel-item-${i}`} src={path}></img>
         ))}
       </Carousel>
     )
