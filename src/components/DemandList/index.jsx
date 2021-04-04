@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 
+import axios from 'axios';
 import { Accordion, Card } from 'react-bootstrap';
-import data from '../../data/undergraduate-demands.json';
 
 import './styles.css';
 
@@ -11,8 +11,43 @@ import { Component } from 'react';
 const lorem = new LoremIpsum();
 
 export default class DemandList extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      finishedLoading: false
+    }
+
+    this.onSuccess = this.onSuccess.bind(this);
+    this.onError = this.onError.bind(this);
+  }
+
+  onSuccess(response) {
+    this.setState({
+      finishedLoading: true,
+      data: response.data
+    });
+  }
+
+  onError(error) {
+    this.setState({
+      finishedLoading: true,
+      error
+    });
+  }
+
+  componentDidMount() {
+    axios(this.props.resourceUrl).then(this.onSuccess).catch(this.onError);
+  }
+
   render() {
-    return data.map((o, i) => (
+    if (!this.state.finishedLoading) return null;
+    else if (this.state.error) {
+      console.error(this.state.error);
+      return "Error fetching data";
+    }
+
+    return this.state.data.map((o, i) => (
       <div key={`UNDERGRADUATE-DEMAND-${i+1}`} className="demand-list item">
         <Accordion>
           <Card>

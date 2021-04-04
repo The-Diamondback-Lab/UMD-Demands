@@ -11,7 +11,7 @@ ReactDOM.render(
   <React.StrictMode>
     <LandingPage />
     <div id="main-container">
-      <DemandList />
+      <DemandList resourceUrl="/data/undergraduate-demands.json" />
       <Biographies />
       <GradIssues />
       <div> &nbsp;</div>
