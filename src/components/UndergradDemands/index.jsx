@@ -13,7 +13,16 @@ import icon6 from '../../Assets/numbericons/alt6.png';
 import icon7 from '../../Assets/numbericons/alt7.png';
 import icon8 from '../../Assets/numbericons/alt8.png';
 
-const headerStyle = { cursor: 'pointer', backgroundColor: 'white', color: 'black', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', fontFamily: 'IBM Plex Sans' }
+const headerStyle = {
+  cursor: 'pointer',
+  backgroundColor: 'white',
+  color: 'black',
+  display: 'flex',
+  flexDirection: 'row',
+  justifyContent: 'center',
+  alignItems: 'center',
+  fontFamily: 'IBM Plex Sans'
+};
 
 export class UndergradIssues extends Component {
   render() {
