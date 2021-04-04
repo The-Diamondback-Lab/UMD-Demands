@@ -79,7 +79,8 @@
 }
 
 .profile > p.profile-title {
-  font-size: 1.25em;
+  font-family: 'IBM Plex Sans';
+  font-size: 1.35em;
   text-align: center;
   color: black;
 }
