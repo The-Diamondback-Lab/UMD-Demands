@@ -48,10 +48,8 @@ export default class DemandList extends Component {
     }
 
     let listClasses = ['demand-list'];
-    let imgPrefix = '';
     if (this.props.theme === 'white') {
       listClasses.push('white');
-      imgPrefix = 'alt';
     }
     let listClassNames = listClasses.join(' ');
 
