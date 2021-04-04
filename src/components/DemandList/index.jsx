@@ -2,11 +2,10 @@
 
 import axios from 'axios';
 import { Accordion, Card } from 'react-bootstrap';
-
-import './styles.css';
-
 import { LoremIpsum } from 'lorem-ipsum';
 import { Component, Fragment } from 'react';
+
+import './styles.css';
 
 const lorem = new LoremIpsum();
 

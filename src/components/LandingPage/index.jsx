@@ -1,8 +1,8 @@
-import React from 'react';
+import { Component } from 'react';
 
 import './styles.css';
 
-class LandingPage extends React.Component {
+class LandingPage extends Component {
   render() {
     return (
       <div id="landing">

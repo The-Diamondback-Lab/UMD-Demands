@@ -5,6 +5,8 @@ import Biographies from './components/Biographies';
 import LandingPage from './components/LandingPage';
 import DemandList from './components/DemandList';
 
+import "bootstrap/dist/css/bootstrap.min.css";
+
 ReactDOM.render(
   <React.StrictMode>
     <LandingPage />
