@@ -36,7 +36,7 @@ export class UndergradIssues extends Component {
   render() {
     return (
       <>
-        <h1 style={{ display: 'flex' , width: '100%' , paddingLeft: '10%', paddingRight: '10%' , fontFamily: 'IBM Plex Sans' }}>GRADUATE LEVEL DEMANDS</h1>
+        <h1 style={{ display: 'flex' , width: '100%' , paddingLeft: '10%', paddingRight: '10%' , fontFamily: 'IBM Plex Sans' }}>UNDERGRADUATE LEVEL DEMANDS</h1>
         <div style={someDivStyle}>
           <Accordion>
             <Card>
