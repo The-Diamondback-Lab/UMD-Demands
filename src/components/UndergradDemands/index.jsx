@@ -24,12 +24,20 @@ const headerStyle = {
   fontFamily: 'IBM Plex Sans'
 };
 
+let someDivStyle = {
+  display: 'flex',
+  width: '100%',
+  justifyContent: 'center',
+  paddingLeft: '10%',
+  paddingRight: '10%'
+};
+
 export class UndergradIssues extends Component {
   render() {
     return (
       <>
         <h1 style={{ display: 'flex' , width: '100%' , paddingLeft: '10%', paddingRight: '10%' , fontFamily: 'IBM Plex Sans' }}>GRADUATE LEVEL DEMANDS</h1>
-        <div style={{ display: 'flex', width: '100%', justifyContent: 'center', paddingLeft: '10%', paddingRight: '10%' }}>
+        <div style={someDivStyle}>
           <Accordion>
             <Card>
               <Accordion.Toggle as={Card.Header} eventKey="1" style={headerStyle}>
@@ -47,7 +55,7 @@ export class UndergradIssues extends Component {
           </Accordion>
         </div>
 
-        <div style={{ display: 'flex', width: '100%', justifyContent: 'center', paddingLeft: '10%', paddingRight: '10%' }}>
+        <div style={someDivStyle}>
           <Accordion>
             <Card>
               <Accordion.Toggle as={Card.Header} eventKey="2" style={headerStyle}>
@@ -73,7 +81,7 @@ export class UndergradIssues extends Component {
           </Accordion>
         </div>
 
-        <div style={{ display: 'flex', width: '100%', justifyContent: 'center', paddingLeft: '10%', paddingRight: '10%' }}>
+        <div style={someDivStyle}>
           <Accordion>
             <Card>
               <Accordion.Toggle as={Card.Header} eventKey="3" style={headerStyle}>
@@ -95,7 +103,7 @@ export class UndergradIssues extends Component {
           </Accordion>
         </div>
 
-        <div style={{ display: 'flex', width: '100%', justifyContent: 'center', paddingLeft: '10%', paddingRight: '10%' }}>
+        <div style={someDivStyle}>
           <Accordion>
             <Card>
               <Accordion.Toggle as={Card.Header} eventKey="4" style={headerStyle}>
@@ -117,7 +125,7 @@ export class UndergradIssues extends Component {
           </Accordion>
         </div>
 
-        <div style={{ display: 'flex', width: '100%', justifyContent: 'center', paddingLeft: '10%', paddingRight: '10%' }}>
+        <div style={someDivStyle}>
           <Accordion>
             <Card>
               <Accordion.Toggle as={Card.Header} eventKey="5" style={headerStyle}>
@@ -137,7 +145,7 @@ export class UndergradIssues extends Component {
           </Accordion>
         </div>
 
-        <div style={{ display: 'flex', width: '100%', justifyContent: 'center', paddingLeft: '10%', paddingRight: '10%' }}>
+        <div style={someDivStyle}>
           <Accordion>
             <Card>
               <Accordion.Toggle as={Card.Header} eventKey="6" style={headerStyle}>
