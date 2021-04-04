@@ -1,5 +1,11 @@
+/* DEFAULT (RED) THEME */
+
 .demand-list {
   margin: 1em 0;
+}
+
+.demand-list .accordion {
+  width: 100%;
 }
 
 .demand-list .item {
@@ -13,14 +19,52 @@
   cursor: pointer;
   background-color: #e21833;
   color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   font-family: 'IBM Plex Sans', Tahoma, Geneva, Verdana, sans-serif;
+
+  display: grid;
+  grid-template-columns: [icon] 50px [header] auto;
+  align-items: center;
+  column-gap: 1.25rem;
 }
+
+.demand-list .item .icon {
+  width: 50px;
+  height: 50px;
+
+  grid-column: icon;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+  font-size: 25px;
+
+  /* Specifically chose 1.25rem (root em) in order to be symmetric with
+  the card's padding */
+  margin-right: 1.25rem;
+
+  background-color: white;
+  color: #e21833;
+  border-radius: 50%;
+}
+
+.demand-list .item .header {
+  grid-column: header;
+
+  width: fit-content;
+  align-self: center;
+  font-size: 20px;
+}
+
+/* WHITE THEME */
 
 .demand-list.white .item .title {
   background-color: white;
   color: black;
+}
+.demand-list.white .item .icon {
+  background-color: #e21833;
+  color: white;
 }
