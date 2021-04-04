@@ -2,11 +2,10 @@
 
 import axios from 'axios';
 import { Accordion, Card } from 'react-bootstrap';
+import { LoremIpsum } from 'lorem-ipsum';
+import { Component, Fragment } from 'react';
 
 import './styles.css';
-
-import { LoremIpsum } from 'lorem-ipsum';
-import { Component } from 'react';
 
 const lorem = new LoremIpsum();
 
@@ -54,7 +53,7 @@ export default class DemandList extends Component {
     let listClassNames = listClasses.join(' ');
 
     let elems = this.state.data.map((o, i) => (
-      <div key={`UNDERGRADUATE-DEMAND-${i+1}`} className="item">
+      <div key={`demand-list-item-${i+1}`} className="item">
         <Accordion>
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey={`${i+1}`} className="title">
@@ -71,6 +70,11 @@ export default class DemandList extends Component {
       </div>
     ));
 
-    return (<div className={listClassNames}>{elems}</div>);
+    return (
+      <Fragment>
+        <h1>{this.props.header}</h1>
+        <div className={listClassNames}>{elems}</div>
+      </Fragment>
+    );
   }
 }

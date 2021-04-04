@@ -1,11 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+@import './fonts.css';
 
 body, #root {
   margin: 0;
+  font-size: 16px;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 767px) {
+  body, #root {
+    font-size: 12px;
+  }
 }
 
 #main-container {
   width: 85%;
   max-width: 1280px;
   margin: auto;
+}
+
+#main-container h1 {
+  font-size: 2.5em;
+  font-family: 'IBM Plex Sans', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0.75em 0;
+  text-transform: uppercase;
 }

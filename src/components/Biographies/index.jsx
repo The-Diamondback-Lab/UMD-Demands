@@ -1,6 +1,5 @@
 import BiographyElement from './BiographyElement';
 
-import "bootstrap/dist/css/bootstrap.min.css";
 import biographyData from '../../data/biographies.json';
 import './styles.css';
 
@@ -14,7 +13,7 @@ export default function Biographies() {
 
   return (
     <div id="bio-container">
-      <h3>Meet the Organizers</h3>
+      <h1>Meet the Organizers</h1>
       <div id="bio-elems">{elems}</div>
     </div>
   );

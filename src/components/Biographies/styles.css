@@ -1,5 +1,5 @@
 #bio-container {
-  margin: 1em;
+  margin: 1em 0;
 }
 
 #bio-elems {
@@ -11,16 +11,17 @@
 }
 
 .profile {
-  width: 150px;
+  width: 10em;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 1.5em;
 }
 
 .picture-container {
-  width: 150px;
-  height: 150px;
-  margin: 0px 1em;
+  width: 10em;
+  height: 10em;
+  margin: 0 1em;
 
   border-radius: 50%;
 
@@ -79,7 +80,8 @@
 }
 
 .profile > p.profile-title {
-  font-size: 1.25em;
+  font-family: 'IBM Plex Sans';
+  font-size: 1.35em;
   text-align: center;
   color: black;
 }
