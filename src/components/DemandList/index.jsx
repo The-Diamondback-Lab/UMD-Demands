@@ -60,9 +60,8 @@ export default class DemandList extends Component {
         <Accordion>
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey={`${i+1}`} className="title">
-              <div style={{ flex: 0.5 }}><img src={`/assets/numbericons/${imgPrefix}${i+1}.png`} style={{ width: '75%' }} /></div>
-              <div style={{ flex: .1 }}></div>
-              <div style={{ flex: 8, alignSelf: 'center', fontSize: 20 }}>{o.header}</div>
+              <div className="icon">{i+1}</div>
+              <div className="header">{o.header}</div>
             </Accordion.Toggle>
 
             <Accordion.Collapse eventKey={`${i+1}`}>
