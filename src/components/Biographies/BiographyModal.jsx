@@ -31,5 +31,5 @@ export default function BiographyModal(props) {
  * @prop {boolean} show Whether the modal should be displayed or not
  * @prop {() => void} onHide Callback function for when modal is closed/hidden
  * @prop {string} title Title of the modal
- * @prop {string} body Plaintext or HTML data for the modal's boday
+ * @prop {string} body Plaintext or HTML data for the modal's body
  */
