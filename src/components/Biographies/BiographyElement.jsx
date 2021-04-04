@@ -1,6 +1,10 @@
 import { useState } from 'react';
+import { LoremIpsum } from 'lorem-ipsum';
+
 import BiographyImage from './BiographyImage';
 import BiographyModal from './BiographyModal';
+
+const lorem = new LoremIpsum();
 
 /**
  * @param {BiographyElementProps} props
@@ -18,7 +22,7 @@ export default function BiographyElement(props) {
     <div className="profile">
       <BiographyImage src={props.picturePath} onClick={onOpen} />
       <p className="profile-title">{props.name}</p>
-      <BiographyModal onHide={onClose} show={modalShow} title={props.name} body={props.data} />
+      <BiographyModal onHide={onClose} show={modalShow} title={props.name} body={props.data || lorem.generateSentences(15)} />
     </div>
   )
 }
