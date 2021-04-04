@@ -22,17 +22,14 @@
 
   padding: 0.75em 1.25em;
 
-  display: grid;
-  grid-template-columns: [icon] 50px [header] auto;
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  column-gap: 1.25em;
 }
 
 .demand-list .item .icon {
   width: 2em;
   height: 2em;
-
-  grid-column: icon;
 
   display: flex;
   flex-direction: column;
@@ -48,11 +45,11 @@
 }
 
 .demand-list .item .header {
-  grid-column: header;
-
   width: fit-content;
   align-self: center;
   font-size: 1.25em;
+
+  margin-left: 1em;
 
   font-weight: 500;
 }
