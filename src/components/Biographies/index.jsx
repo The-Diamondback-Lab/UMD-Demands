@@ -1,7 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
-
-import { Fragment } from 'react';
-
 import BiographyElement from './BiographyElement';
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -17,10 +13,9 @@ export default function Biographies() {
   });
 
   return (
-    <Fragment>
-      <div id="bio-container">
-        {elems}
-      </div>
-    </Fragment>
+    <div id="bio-container">
+      <h3>Meet the Organizers</h3>
+      <div id="bio-elems">{elems}</div>
+    </div>
   );
 }
