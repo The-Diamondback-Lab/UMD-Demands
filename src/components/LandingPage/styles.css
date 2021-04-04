@@ -8,4 +8,18 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+#landing-title-container {
+  color: #e21833;
+  font-family: 'Solano Gothic BD';
+  margin-bottom: 2.5em;
+}
+
+#landing-title-container > h1 {
+  font-size: 12em;
 }

@@ -6,7 +6,9 @@ class LandingPage extends Component {
   render() {
     return (
       <div id="landing">
-        {/* <h1>UMD - Black Lives Matter - List of Demands</h1> */}
+        <div id="landing-title-container">
+          <h1>DEMANDS</h1>
+        </div>
       </div>
     )
   }
