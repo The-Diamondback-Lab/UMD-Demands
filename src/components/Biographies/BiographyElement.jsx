@@ -22,7 +22,11 @@ export default function BiographyElement(props) {
     <div className="profile">
       <BiographyImage src={props.picturePath} onClick={onOpen} />
       <p className="profile-title">{props.name}</p>
-      <BiographyModal onHide={onClose} show={modalShow} title={props.name} body={props.data || lorem.generateSentences(15)} />
+      <BiographyModal
+        onHide={onClose}
+        show={modalShow}
+        title={props.name}
+        body={props.data || lorem.generateSentences(15)} />
     </div>
   )
 }
