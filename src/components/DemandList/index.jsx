@@ -47,8 +47,8 @@ export default class DemandList extends Component {
       return "Error fetching data";
     }
 
-    return this.state.data.map((o, i) => (
-      <div key={`UNDERGRADUATE-DEMAND-${i+1}`} className="demand-list item">
+    let elems = this.state.data.map((o, i) => (
+      <div key={`UNDERGRADUATE-DEMAND-${i+1}`} className="item">
         <Accordion>
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey={`${i+1}`} className="title">
@@ -65,5 +65,7 @@ export default class DemandList extends Component {
         </Accordion>
       </div>
     ));
+
+    return (<div className="demand-list">{elems}</div>);
   }
 }
