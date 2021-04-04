@@ -6,6 +6,9 @@ import { Modal, Button } from "react-bootstrap";
  * @param {BiographyModalProps} props
  */
 export default function BiographyModal(props) {
+  let bodyText = (<div dangerouslySetInnerHTML={{__html: props.body}}></div>);
+  let bodyGallery = null;
+
   return (
     <Modal
       show={props.show}
@@ -18,7 +21,10 @@ export default function BiographyModal(props) {
           {props.title}
         </Modal.Title>
       </Modal.Header>
-      <Modal.Body dangerouslySetInnerHTML={{__html: props.body}}></Modal.Body>
+      <Modal.Body>
+        {bodyText}
+        {bodyGallery}
+      </Modal.Body>
       <Modal.Footer>
         <Button onClick={props.onHide}>Close</Button>
       </Modal.Footer>
