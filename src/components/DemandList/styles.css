@@ -40,10 +40,6 @@
   font-weight: bold;
   font-size: 1.5em;
 
-  /* Specifically chose 1.25rem (root em) in order to be symmetric with
-  the card's padding */
-  margin-right: 1.25rem;
-
   background-color: white;
   color: #e21833;
   border-radius: 50%;
