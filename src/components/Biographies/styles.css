@@ -1,0 +1,85 @@
+#bio-container {
+  margin: 1em;
+}
+
+#bio-elems {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: space-evenly;
+}
+
+.profile {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.picture-container {
+  width: 150px;
+  height: 150px;
+  margin: 0px 1em;
+
+  border-radius: 50%;
+
+  /* Visually, this is redundant given the filter rules in `.picture-container > img`
+  but is necessary to get the text overlay centered on this div */
+  filter: brightness(100%);
+  -webkit-filter: brightness(100%);
+}
+
+.picture-container > img {
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+
+  /* Image shows up normally */
+  filter: brightness(100%);
+  -webkit-filter: brightness(100%);
+
+  /* Transition rules */
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.picture-container:hover > img {
+  /* Image dims a bit when hovered on */
+  filter: brightness(25%);
+  -webkit-filter: brightness(25%);
+
+  cursor: pointer;
+}
+
+.picture-container > p.text-overlay {
+  /* Hide text overlay */
+  display: none;
+}
+
+.picture-container:hover > p.text-overlay {
+  /* Text overlay is displayed on hover */
+  display: block;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+
+  font-size: 1.5em;
+
+  /* Ensures the cursor remains a pointer even if it goes over this element */
+  cursor: pointer;
+
+  text-align: center;
+  color: white;
+}
+
+.profile > p.profile-title {
+  font-size: 1.25em;
+  text-align: center;
+  color: black;
+}

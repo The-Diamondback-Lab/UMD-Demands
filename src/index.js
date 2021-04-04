@@ -1,16 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import GradIssues from './gradDemands';
-import UndergradIssues from './undergradDemands';
-import reportWebVitals from './reportWebVitals';
-import LandingPage from './LandingPage';
+import GradIssues from './components/GradDemands';
+import UndergradIssues from './components/UndergradDemands';
+import Biographies from './components/Biographies';
+import LandingPage from './components/LandingPage';
 
 ReactDOM.render(
   <React.StrictMode>
-    <div>
-      <LandingPage />
-      <div> &nbsp;</div>
+    <LandingPage />
+    <div id="main-container">
+      <Biographies />
       <GradIssues />
       <div> &nbsp;</div>
       <UndergradIssues />
@@ -18,9 +18,3 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

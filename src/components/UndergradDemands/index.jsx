@@ -1,26 +1,43 @@
-﻿import React, { Component } from "react";
+/* eslint-disable jsx-a11y/alt-text */
+
+import React, { Component } from "react";
 import { Accordion, Card } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import icon1 from './Assets/numbericons/alt1.png';
-import icon2 from './Assets/numbericons/alt2.png';
-import icon3 from './Assets/numbericons/alt3.png';
-import icon4 from './Assets/numbericons/alt4.png';
-import icon5 from './Assets/numbericons/alt5.png';
-import icon6 from './Assets/numbericons/alt6.png';
-import icon7 from './Assets/numbericons/alt7.png';
-import icon8 from './Assets/numbericons/alt8.png';
+import icon1 from '../../Assets/numbericons/alt1.png';
+import icon2 from '../../Assets/numbericons/alt2.png';
+import icon3 from '../../Assets/numbericons/alt3.png';
+import icon4 from '../../Assets/numbericons/alt4.png';
+import icon5 from '../../Assets/numbericons/alt5.png';
+import icon6 from '../../Assets/numbericons/alt6.png';
+import icon7 from '../../Assets/numbericons/alt7.png';
+import icon8 from '../../Assets/numbericons/alt8.png';
 
-import plex from './fonts/plexSans.ttf';
+const headerStyle = {
+  cursor: 'pointer',
+  backgroundColor: 'white',
+  color: 'black',
+  display: 'flex',
+  flexDirection: 'row',
+  justifyContent: 'center',
+  alignItems: 'center',
+  fontFamily: 'IBM Plex Sans'
+};
 
-const headerStyle = { cursor: 'pointer', backgroundColor: 'white', color: 'black', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', fontFamily: plex }
+let someDivStyle = {
+  display: 'flex',
+  width: '100%',
+  justifyContent: 'center',
+  paddingLeft: '10%',
+  paddingRight: '10%'
+};
 
 export class UndergradIssues extends Component {
   render() {
     return (
       <>
-        <h1 style={{ display: 'flex' , width: '100%' , paddingLeft: '10%', paddingRight: '10%' , fontFamily: plex }}>GRADUATE LEVEL DEMANDS</h1>
-        <div style={{ display: 'flex', width: '100%', justifyContent: 'center', paddingLeft: '10%', paddingRight: '10%' }}>
+        <h1 style={{ display: 'flex' , width: '100%' , paddingLeft: '10%', paddingRight: '10%' , fontFamily: 'IBM Plex Sans' }}>UNDERGRADUATE LEVEL DEMANDS</h1>
+        <div style={someDivStyle}>
           <Accordion>
             <Card>
               <Accordion.Toggle as={Card.Header} eventKey="1" style={headerStyle}>
@@ -38,7 +55,7 @@ export class UndergradIssues extends Component {
           </Accordion>
         </div>
 
-        <div style={{ display: 'flex', width: '100%', justifyContent: 'center', paddingLeft: '10%', paddingRight: '10%' }}>
+        <div style={someDivStyle}>
           <Accordion>
             <Card>
               <Accordion.Toggle as={Card.Header} eventKey="2" style={headerStyle}>
@@ -64,7 +81,7 @@ export class UndergradIssues extends Component {
           </Accordion>
         </div>
 
-        <div style={{ display: 'flex', width: '100%', justifyContent: 'center', paddingLeft: '10%', paddingRight: '10%' }}>
+        <div style={someDivStyle}>
           <Accordion>
             <Card>
               <Accordion.Toggle as={Card.Header} eventKey="3" style={headerStyle}>
@@ -86,7 +103,7 @@ export class UndergradIssues extends Component {
           </Accordion>
         </div>
 
-        <div style={{ display: 'flex', width: '100%', justifyContent: 'center', paddingLeft: '10%', paddingRight: '10%' }}>
+        <div style={someDivStyle}>
           <Accordion>
             <Card>
               <Accordion.Toggle as={Card.Header} eventKey="4" style={headerStyle}>
@@ -98,7 +115,7 @@ export class UndergradIssues extends Component {
               <Accordion.Collapse eventKey="4">
                 <Card.Body>
                   The University of Maryland, College Park will issue and increase the number of full assistantships for all current and incoming Black graduate students by 2021. As it currently stands, 4.9% of Black graduate students hold assistantships, approximately half the number of those enrolled.
-                  &nbsp;                
+                  &nbsp;
                   The University of Maryland, College Park will provide full assistantships to all currently unfunded Black graduate students by 2021.
                   &nbsp;
                   The University of Maryland, College Park will offer each current Black graduate student an additional year of funding in recognition of anti-blackness as an impediment to research and time-to-degree.
@@ -108,7 +125,7 @@ export class UndergradIssues extends Component {
           </Accordion>
         </div>
 
-        <div style={{ display: 'flex', width: '100%', justifyContent: 'center', paddingLeft: '10%', paddingRight: '10%' }}>
+        <div style={someDivStyle}>
           <Accordion>
             <Card>
               <Accordion.Toggle as={Card.Header} eventKey="5" style={headerStyle}>
@@ -121,14 +138,14 @@ export class UndergradIssues extends Component {
                 <Card.Body>
                   The University of Maryland, College Park will never allow any graduate student to teach more than one class (including discussion sections and multiple sections of one course) per semester and one of their funded years must be a fellowship year in order for them to pursue their research and scholarship with relative safety and comfort.
                   &nbsp;
-                  The University of Maryland, College Park will eradicate the use of teaching evaluations, as they are often used as vehicles for expressions of bigotry, specifically due to anti-blackness and patriarchy. 
+                  The University of Maryland, College Park will eradicate the use of teaching evaluations, as they are often used as vehicles for expressions of bigotry, specifically due to anti-blackness and patriarchy.
                 </Card.Body>
               </Accordion.Collapse>
             </Card>
           </Accordion>
         </div>
 
-        <div style={{ display: 'flex', width: '100%', justifyContent: 'center', paddingLeft: '10%', paddingRight: '10%' }}>
+        <div style={someDivStyle}>
           <Accordion>
             <Card>
               <Accordion.Toggle as={Card.Header} eventKey="6" style={headerStyle}>
