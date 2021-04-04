@@ -5,11 +5,13 @@ import GradIssues from './components/GradDemands';
 import UndergradIssues from './components/UndergradDemands';
 import Biographies from './components/Biographies';
 import LandingPage from './components/LandingPage';
+import DemandList from './components/DemandList';
 
 ReactDOM.render(
   <React.StrictMode>
     <LandingPage />
     <div id="main-container">
+      <DemandList />
       <Biographies />
       <GradIssues />
       <div> &nbsp;</div>
