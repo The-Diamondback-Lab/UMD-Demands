@@ -6,6 +6,7 @@ import LandingPage from './components/LandingPage';
 import DemandList from './components/DemandList';
 
 import "bootstrap/dist/css/bootstrap.min.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 ReactDOM.render(
   <React.StrictMode>

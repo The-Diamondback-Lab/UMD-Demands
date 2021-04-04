@@ -1,4 +1,7 @@
+/* eslint-disable jsx-a11y/alt-text */
 import { Modal, Button } from "react-bootstrap";
+
+import { Carousel } from 'react-responsive-carousel';
 
 /**
  * A basic modal that displays information about a person.
@@ -8,6 +11,17 @@ import { Modal, Button } from "react-bootstrap";
 export default function BiographyModal(props) {
   let bodyText = (<div dangerouslySetInnerHTML={{__html: props.body}}></div>);
   let bodyGallery = null;
+  if (props.gallery) {
+    bodyGallery = (
+      <Carousel>
+        {props.gallery.map((path, i) => (
+          <div key={`carousel-item-${i}`}>
+            <img src={path}></img>
+          </div>
+        ))}
+      </Carousel>
+    )
+  }
 
   return (
     <Modal
