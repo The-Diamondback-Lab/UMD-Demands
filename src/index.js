@@ -4,7 +4,7 @@ import './index.css';
 import GradIssues from './components/GradDemands';
 import UndergradIssues from './components/UndergradDemands';
 import Biographies from './components/Biographies';
-import LandingPage from './LandingPage';
+import LandingPage from './components/LandingPage';
 
 ReactDOM.render(
   <React.StrictMode>
