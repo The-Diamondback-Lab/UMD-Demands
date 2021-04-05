@@ -1,32 +1,55 @@
 [
   {
     "name": "Aleksandar Kaja Fareed",
-    "picturePath": "https://boredhumans.b-cdn.net/faces2/10.jpg",
-    "body": "",
+    "picturePath": "/biographies/profiles/adam.jpg",
     "gallery": [
-      "https://dbknews-assets.s3.amazonaws.com/umddemands.dbknews.com/biographies/adam1.jpg",
-      "https://dbknews-assets.s3.amazonaws.com/umddemands.dbknews.com/biographies/adam2.jpg",
-      "https://dbknews-assets.s3.amazonaws.com/umddemands.dbknews.com/biographies/adam3.jpg"
-    ]
+      "/biographies/adam1.jpg",
+      "/biographies/adam2.jpg",
+      "/biographies/adam3.jpg"
+    ],
+    "body": ""
   },
   {
     "name": "Erdmann Lou Steliana",
-    "picturePath": "https://boredhumans.b-cdn.net/faces2/11.jpg",
+    "picturePath": "/biographies/profiles/jehnae.jpg",
+    "gallery": [
+      "/biographies/jehnae1.jpg",
+      "/biographies/jehnae2.jpg",
+      "/biographies/jehnae3.jpg",
+      "/biographies/jehnae4.jpg",
+      "/biographies/jehnae5.jpg",
+      "/biographies/jehnae6.jpg"
+    ],
     "body": ""
   },
   {
     "name": "Padraig Konstantin Muhammad",
-    "picturePath": "https://boredhumans.b-cdn.net/faces2/12.jpg",
+    "picturePath": "/biographies/profiles/nadia.jpg",
+    "gallery": [
+      "/biographies/nadia1.jpg",
+      "/biographies/nadia2.jpg",
+      "/biographies/nadia3.jpg",
+      "/biographies/nadia4.jpg"
+    ],
     "body": ""
   },
   {
     "name": "Kiri Puja Oliver",
-    "picturePath": "https://boredhumans.b-cdn.net/faces2/13.jpg",
+    "picturePath": "/biographies/profiles/pauline.jpg",
+    "gallery": [
+      "/biographies/pauline1.jpg",
+      "/biographies/pauline2.jpg"
+    ],
     "body": ""
   },
   {
     "name": "Uriasz Iacob",
-    "picturePath": "https://boredhumans.b-cdn.net/faces2/14.jpg",
+    "picturePath": "/biographies/profiles/saba.jpg",
+    "gallery": [
+      "/biographies/saba1.jpg",
+      "/biographies/saba2.jpg",
+      "/biographies/saba3.jpg"
+    ],
     "body": ""
   }
 ]

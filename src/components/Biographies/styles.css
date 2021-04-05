@@ -36,6 +36,8 @@
   height: inherit;
   border-radius: 50%;
 
+  object-fit: cover;
+
   /* Image shows up normally */
   filter: brightness(100%);
   -webkit-filter: brightness(100%);
