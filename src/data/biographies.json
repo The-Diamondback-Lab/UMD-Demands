@@ -4,9 +4,9 @@
     "picturePath": "https://boredhumans.b-cdn.net/faces2/10.jpg",
     "body": "",
     "gallery": [
-      "https://dbknews-assets.s3.amazonaws.com/umddemands.dbknews.com/biographies/adam1.jpg",
-      "https://dbknews-assets.s3.amazonaws.com/umddemands.dbknews.com/biographies/adam2.jpg",
-      "https://dbknews-assets.s3.amazonaws.com/umddemands.dbknews.com/biographies/adam3.jpg"
+      "/biographies/adam1.jpg",
+      "/biographies/adam2.jpg",
+      "/biographies/adam3.jpg"
     ]
   },
   {
