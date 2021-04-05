@@ -1,7 +1,7 @@
 [
   {
     "name": "Aleksandar Kaja Fareed",
-    "picturePath": "/biographies/adam1.jpg",
+    "picturePath": "/biographies/profiles/adam.jpg",
     "gallery": [
       "/biographies/adam1.jpg",
       "/biographies/adam2.jpg",
@@ -11,7 +11,7 @@
   },
   {
     "name": "Erdmann Lou Steliana",
-    "picturePath": "/biographies/jehnae1.jpg",
+    "picturePath": "/biographies/profiles/jehnae.jpg",
     "gallery": [
       "/biographies/jehnae1.jpg",
       "/biographies/jehnae2.jpg",
@@ -24,7 +24,7 @@
   },
   {
     "name": "Padraig Konstantin Muhammad",
-    "picturePath": "/biographies/nadia1.jpg",
+    "picturePath": "/biographies/profiles/nadia.jpg",
     "gallery": [
       "/biographies/nadia1.jpg",
       "/biographies/nadia2.jpg",
@@ -35,7 +35,7 @@
   },
   {
     "name": "Kiri Puja Oliver",
-    "picturePath": "/biographies/pauline1.jpg",
+    "picturePath": "/biographies/profiles/pauline.jpg",
     "gallery": [
       "/biographies/pauline1.jpg",
       "/biographies/pauline2.jpg"
@@ -44,7 +44,7 @@
   },
   {
     "name": "Uriasz Iacob",
-    "picturePath": "/biographies/saba1.jpg",
+    "picturePath": "/biographies/profiles/saba.jpg",
     "gallery": [
       "/biographies/saba1.jpg",
       "/biographies/saba2.jpg",
