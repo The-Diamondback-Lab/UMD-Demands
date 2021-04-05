@@ -48,12 +48,12 @@ async function fetchBiographies() {
 
 /**
  * Fetches all text related to a set/type of demands. The response includes
- * an array of headers (or the demand titles) and an array of bodies.
+ * an array of objects, which have the properties `header` and `body`
  *
  * @param {("graduate"|"undergraduate")} type What type of demands to fetch
  */
 async function fetchDemands(type) {
-  if (type !== 'undergraduate' || type !== 'graduate') {
+  if (type !== 'undergraduate' && type !== 'graduate') {
     throw new TypeError(`Unexpected demand type: ${type}`);
   }
 
@@ -66,14 +66,11 @@ async function fetchDemands(type) {
 
   // Fetching all demand bodies
   let bodyResponses = await Promise.all(
-    headers.map((_, i) => axios.get(`${prefix}/demand${i+1}`)));
+    headers.map((_, i) => axios.get(`${prefix}/demand${i+1}.html`)));
   /** @type {string[]} */
   let bodies = bodyResponses.map(r => r.data);
 
-  return {
-    headers,
-    bodies
-  }
+  return headers.map((header, i) => ({header, body: bodies[i]}));
 }
 
 /**
@@ -85,14 +82,14 @@ async function fetchDemands(type) {
  */
 
 /**
- * @typedef DemandResults
- * @prop {string[]} headers
- * @prop {string[]} bodies
+ * @typedef DemandData
+ * @prop {string} header
+ * @prop {string} body
  */
 
 /**
  * @typedef AllResults
  * @prop {BiographyData[]} biographies
- * @prop {DemandResults} graduateDemands
- * @prop {DemandResults} undergraduateDemands
+ * @prop {DemandData[]} graduateDemands
+ * @prop {DemandData[]} undergraduateDemands
  */
