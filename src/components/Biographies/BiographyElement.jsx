@@ -33,9 +33,5 @@ export default function BiographyElement(props) {
 }
 
 /**
- * @typedef BiographyElementProps
- * @prop {string} picturePath Path to profile picture
- * @prop {string} name Name of person
- * @prop {string} body Plaintext or HTMl biographical data
- * @prop {string[]} [gallery] Array of picture paths for a gallery
+ * @typedef {import('../../utils/data-fetcher').BiographyData} BiographyElementProps
  */
