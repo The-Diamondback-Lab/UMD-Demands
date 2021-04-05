@@ -1,7 +1,7 @@
 [
   {
     "name": "Aleksandar Kaja Fareed",
-    "picturePath": "https://boredhumans.b-cdn.net/faces2/10.jpg",
+    "picturePath": "/biographies/adam1.jpg",
     "body": "",
     "gallery": [
       "/biographies/adam1.jpg",
@@ -11,22 +11,45 @@
   },
   {
     "name": "Erdmann Lou Steliana",
-    "picturePath": "https://boredhumans.b-cdn.net/faces2/11.jpg",
-    "body": ""
+    "picturePath": "/biographies/jehnae1.jpg",
+    "body": "",
+    "gallery": [
+      "/biographies/jehnae1.jpg",
+      "/biographies/jehnae2.jpg",
+      "/biographies/jehnae3.jpg",
+      "/biographies/jehnae4.jpg",
+      "/biographies/jehnae5.jpg",
+      "/biographies/jehnae6.jpg"
+    ]
   },
   {
     "name": "Padraig Konstantin Muhammad",
-    "picturePath": "https://boredhumans.b-cdn.net/faces2/12.jpg",
-    "body": ""
+    "picturePath": "/biographies/nadia1.jpg",
+    "body": "",
+    "gallery": [
+      "/biographies/nadia1.jpg",
+      "/biographies/nadia2.jpg",
+      "/biographies/nadia3.jpg",
+      "/biographies/nadia4.jpg"
+    ]
   },
   {
     "name": "Kiri Puja Oliver",
-    "picturePath": "https://boredhumans.b-cdn.net/faces2/13.jpg",
-    "body": ""
+    "picturePath": "/biographies/pauline1.jpg",
+    "body": "",
+    "gallery": [
+      "/biographies/pauline1.jpg",
+      "/biographies/pauline2.jpg"
+    ]
   },
   {
     "name": "Uriasz Iacob",
-    "picturePath": "https://boredhumans.b-cdn.net/faces2/14.jpg",
-    "body": ""
+    "picturePath": "/biographies/saba1.jpg",
+    "body": "",
+    "gallery": [
+      "/biographies/saba1.jpg",
+      "/biographies/saba2.jpg",
+      "/biographies/saba3.jpg"
+    ]
   }
 ]
