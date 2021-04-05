@@ -1,9 +1,9 @@
 import { Component, Fragment } from "react";
 import { fetchAllData } from '../utils/data-fetcher';
 
-import Biographies from './components/Biographies';
-import LandingPage from './components/LandingPage';
-import DemandList from './components/DemandList';
+import Biographies from './Biographies';
+import LandingPage from './LandingPage';
+import DemandList from './DemandList';
 
 export default class App extends Component {
   constructor(props) {
