@@ -3,7 +3,7 @@ import axios from 'axios';
 /**
  * Fetches all relevant data needed to render the application
  */
-export default async function fetchAllData() {
+export async function fetchAllData() {
   // If filenames are "enumerated" (i.e. dog1.jpg, dog2.jpg, etc), then the
   // NUMBERING IS EXPECTED TO START AT 1
 
