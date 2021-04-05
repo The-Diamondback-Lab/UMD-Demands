@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
 
-import axios from 'axios';
 import { Accordion, Card } from 'react-bootstrap';
 import { LoremIpsum } from 'lorem-ipsum';
 import { Component, Fragment } from 'react';
@@ -10,49 +9,14 @@ import './styles.css';
 const lorem = new LoremIpsum();
 
 export default class DemandList extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      finishedLoading: false
-    }
-
-    this.onSuccess = this.onSuccess.bind(this);
-    this.onError = this.onError.bind(this);
-  }
-
-  onSuccess(response) {
-    this.setState({
-      finishedLoading: true,
-      data: response.data
-    });
-  }
-
-  onError(error) {
-    this.setState({
-      finishedLoading: true,
-      error
-    });
-  }
-
-  componentDidMount() {
-    axios(this.props.resourceUrl).then(this.onSuccess).catch(this.onError);
-  }
-
   render() {
-    if (!this.state.finishedLoading) return null;
-    else if (this.state.error) {
-      console.error(this.state.error);
-      return "Error fetching data";
-    }
-
     let listClasses = ['demand-list'];
     if (this.props.theme === 'white') {
       listClasses.push('white');
     }
     let listClassNames = listClasses.join(' ');
 
-    let elems = this.state.data.map((o, i) => (
+    let elems = this.props.data.map((o, i) => (
       <div key={`demand-list-item-${i+1}`} className="item">
         <Accordion>
           <Card>

@@ -36,10 +36,11 @@ export default class App extends Component {
   }
 
   render() {
-    if (!this.state.finishedLoading) return null; // TODO return loading screen instead
-    else if (this.state.error) {
+    const { finishedLoading, error, data } = this.state;
+    if (!finishedLoading) return null; // TODO return loading screen instead
+    else if (error) {
       // TODO return a better error page
-      console.error(this.state.error);
+      console.error(error);
       return (<p>Something went wrong when fetching data</p>);
     }
 
@@ -47,11 +48,13 @@ export default class App extends Component {
       <Fragment>
         <LandingPage />
         <div id="main-container">
-          <Biographies />
+          <Biographies data={data.biographies}/>
           <DemandList
+            data={data.undergraduateDemands}
             header="Undergraduate Demands"
             resourceUrl="/data/undergraduate-demands.json" />
           <DemandList
+            data={data.graduateDemands}
             header="Graduate Demands"
             resourceUrl="/data/graduate-demands.json"
             theme="white" />
