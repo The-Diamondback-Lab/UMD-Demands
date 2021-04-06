@@ -3,20 +3,13 @@ import BiographyElement from './BiographyElement';
 import './styles.css';
 
 export default function Biographies(props) {
-  const ASSETS_URL = process.env.REACT_APP_ASSETS_URL;
-
   let elems = props.data.map((person, i) => {
-    let resolvedPicturePath = ASSETS_URL + person.picturePath;
-    let resolveGallery = person.gallery
-      ? person.gallery.map(x => ASSETS_URL + x)
-      : null;
-
     return <BiographyElement
       key={`organizer-biography-${i}`}
       name={person.name}
-      picturePath={resolvedPicturePath}
+      picturePath={person.picturePath}
       body={person.body}
-      gallery={resolveGallery}
+      gallery={person.gallery}
     ></BiographyElement>
   });
 

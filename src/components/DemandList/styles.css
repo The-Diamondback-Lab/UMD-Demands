@@ -60,6 +60,15 @@
   line-height: 1.75em;
 }
 
+.demand-list .card-body img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: contain;
+
+  margin-bottom: 1em;
+}
+
 /* WHITE THEME */
 
 .demand-list.white .item .title {
