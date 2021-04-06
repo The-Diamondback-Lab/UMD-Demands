@@ -77,6 +77,9 @@ export default class App extends Component {
         {loadingElement}
         <LandingPage />
         <div id="main-container">
+          <div
+            className="intro"
+            dangerouslySetInnerHTML={{__html: data.intro}} />
           <Biographies data={data.biographies}/>
           <DemandList
             data={data.undergraduateDemands}

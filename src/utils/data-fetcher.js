@@ -21,7 +21,8 @@ export async function fetchAllData() {
     fetchBiographies(),
     fetchDemands('graduate'),
     fetchDemands('undergraduate'),
-    fetchCredits()
+    fetchCredits(),
+    fetchIntro()
   ];
   let results = await Promise.all(promises);
 
@@ -32,12 +33,27 @@ export async function fetchAllData() {
     biographies: results[0],
     graduateDemands: results[1],
     undergraduateDemands: results[2],
-    credits: results[3]
+    credits: results[3],
+    intro: results[4]
   };
 
   return o;
 }
 
+/**
+ * @returns {string}
+ */
+async function fetchIntro() {
+  /** @type {string} */
+  let data = (await axios.get('/data/intro.html')).data;
+
+  // Wrapping each line in a paragraph tag
+  return data.split(/\r?\n/gi).map(s => `<p>${s}</p>`).join(' ');
+}
+
+/**
+ * @returns {string[]}
+ */
 async function fetchCredits() {
   return (await axios.get('/data/credits.json')).data;
 }
@@ -127,4 +143,6 @@ async function fetchDemands(type) {
  * @prop {BiographyData[]} biographies
  * @prop {DemandData[]} graduateDemands
  * @prop {DemandData[]} undergraduateDemands
+ * @prop {string[]} credits
+ * @prop {string} intro
  */
