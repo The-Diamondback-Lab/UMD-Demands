@@ -41,7 +41,6 @@ export async function fetchAllData() {
  */
 async function fetchBiographies() {
   let resp = await axios.get('/data/biographies.json');
-  // TODO typedef for this response
   /** @type {BiographyData[]} */
   return resp.data;
 }
