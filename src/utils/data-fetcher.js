@@ -1,5 +1,7 @@
 import axios from 'axios';
 
+const ASSETS_URL = process.env.REACT_APP_ASSETS_URL;
+
 /**
  * Fetches all relevant data needed to render the application
  */
@@ -47,9 +49,19 @@ async function fetchCredits() {
  */
 async function fetchBiographies() {
   let resp = await axios.get('/data/biographies.json');
-  // TODO typedef for this response
   /** @type {BiographyData[]} */
-  return resp.data;
+  let bios = resp.data;
+
+  return bios.map(obj => {
+    let newObj = Object.assign({}, obj);
+
+    newObj.picturePath = ASSETS_URL + obj.picturePath;
+    if (obj.gallery) {
+      newObj.gallery = obj.gallery.map(s => ASSETS_URL + s);
+    }
+
+    return newObj;
+  });
 }
 
 /**
@@ -76,7 +88,11 @@ async function fetchDemands(type) {
   /** @type {string[]} */
   let bodies = bodyResponses.map(r => r.data);
 
-  return headers.map((header, i) => ({header, body: bodies[i]}));
+  return headers.map((o, i) => ({
+    header: o.header,
+    picturePath: ASSETS_URL + o.picturePath,
+    body: bodies[i]
+  }));
 }
 
 /**
@@ -90,6 +106,7 @@ async function fetchDemands(type) {
 /**
  * @typedef DemandData
  * @prop {string} header
+ * @prop {string} picturePath
  * @prop {string} body
  */
 
