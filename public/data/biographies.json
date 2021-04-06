@@ -7,7 +7,7 @@
       "/biographies/adam2.jpg",
       "/biographies/adam3.jpg"
     ],
-    "body": ""
+    "body": "<p>Adam Ahmed, a fifth-year senior mechanical engineering major, co-founded the Somali Students Association during his sophomore year and currently serves as its president.</p>"
   },
   {
     "name": "Jehnae Linkins",
@@ -20,7 +20,7 @@
       "/biographies/jehnae5.jpg",
       "/biographies/jehnae6.jpg"
     ],
-    "body": ""
+    "body": "<p>Jehnae Linkins, a mechanical engineering doctoral student, is president of the Black Graduate Student Union.</p>"
   },
   {
     "name": "Nadia Owusu",
@@ -31,7 +31,7 @@
       "/biographies/nadia3.jpg",
       "/biographies/nadia4.jpg"
     ],
-    "body": ""
+    "body": "<p>Nadia Owusu, a senior government and politics major, co-founded Black Terps Matter with Saba Tshibaka and Alysa Conway over the summer. She also serves on the University Senate’s Executive Committee and is external affairs vice president of the Student Success Leadership Council.</p>"
   },
   {
     "name": "Pauline Sow",
@@ -40,7 +40,7 @@
       "/biographies/pauline1.jpg",
       "/biographies/pauline2.jpg"
     ],
-    "body": ""
+    "body": "<p>Pauline Sow, a senior dance, economics and government and politics major, serves as the Student Government Association’s director of diversity and inclusion.</p>"
   },
   {
     "name": "Saba Tshibaka",
@@ -50,6 +50,6 @@
       "/biographies/saba2.jpg",
       "/biographies/saba3.jpg"
     ],
-    "body": ""
+    "body": "<p>Saba Tshibaka, a fifth-year senior philosophy, politics and economics major, co-founded Black Terps Matter with Nadia Owusu and Alysa Conway over the summer.</p>"
   }
 ]
