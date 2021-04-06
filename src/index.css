@@ -24,3 +24,10 @@ body, #root {
   margin: 0.75em 0;
   text-transform: uppercase;
 }
+
+.intro {
+  font-family: 'IBM Plex Sans';
+  font-size: 1.1em;
+
+  margin-top: 1.5em;
+}
