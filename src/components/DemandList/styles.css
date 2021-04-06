@@ -73,6 +73,11 @@
   color: #e21833;
 }
 
+.demand-list .card-body h3 {
+  margin-top: 1em;
+  font-style: italic;
+}
+
 /* WHITE THEME */
 
 .demand-list.white .item .title {
