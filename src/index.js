@@ -5,6 +5,7 @@ import App from './components/App';
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "./vendors/animate.min.css";
 
 ReactDOM.render(
   <React.StrictMode>
