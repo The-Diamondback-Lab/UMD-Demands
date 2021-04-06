@@ -3,12 +3,10 @@ import BiographyElement from './BiographyElement';
 import './styles.css';
 
 export default function Biographies(props) {
-  const ASSETS_URL = process.env.REACT_APP_ASSETS_URL;
-
   let elems = props.data.map((person, i) => {
-    let resolvedPicturePath = ASSETS_URL + person.picturePath;
+    let resolvedPicturePath = person.picturePath;
     let resolveGallery = person.gallery
-      ? person.gallery.map(x => ASSETS_URL + x)
+      ? person.gallery.map(x => x)
       : null;
 
     return <BiographyElement

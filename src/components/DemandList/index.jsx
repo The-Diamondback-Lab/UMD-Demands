@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
-
 import { Accordion, Card } from 'react-bootstrap';
 import { LoremIpsum } from 'lorem-ipsum';
 import { Component, Fragment } from 'react';
@@ -10,8 +8,6 @@ const lorem = new LoremIpsum();
 
 export default class DemandList extends Component {
   render() {
-    const ASSETS_URL = process.env.REACT_APP_ASSETS_URL;
-
     let listClasses = ['demand-list'];
     if (this.props.theme === 'white') {
       listClasses.push('white');
@@ -19,7 +15,7 @@ export default class DemandList extends Component {
     let listClassNames = listClasses.join(' ');
 
     let elems = this.props.data.map((o, i) => {
-      let imgHtml = `<img src="${ASSETS_URL + o.picturePath}"></img>`;
+      let imgHtml = `<img src="${o.picturePath}"></img>`;
       let bodyHtml = [imgHtml, o.body || lorem.generateSentences(10)].join('');
 
       return (
