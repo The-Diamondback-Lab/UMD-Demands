@@ -31,3 +31,9 @@ body, #root {
 
   margin-top: 1.5em;
 }
+
+@media screen and (max-width: 767px) {
+  .intro {
+    font-size: 1.3em;
+  }
+}
