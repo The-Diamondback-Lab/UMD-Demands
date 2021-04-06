@@ -89,14 +89,15 @@ async function fetchDemands(type) {
   let bodies = bodyResponses.map(r => {
     /** @type {string} */
     let rawContent = r.data;
-    let paragraphs = rawContent
+    let lines = rawContent
       .replace(/“/gi, '&ldquo;') // Fixing left "fancy" quotes
       .replace(/”/gi, '&rdquo;') // Fixing right "fancy" quotes
       .replace(/’/gi, '&rsquo;') // Fixing "fancy" apostrophes
       .split(/\r?\n/gi) // Splitting by lines
       .filter(x => x.length); // Removing empty lines
 
-    return paragraphs.map(para => `<p>${para}</p>`).join('\n');
+    // Wrapping each line in a paragraph tag
+    return lines.map(para => `<p>${para}</p>`).join('\n');
   });
 
   return headers.map((o, i) => ({
