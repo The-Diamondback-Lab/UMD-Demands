@@ -1,27 +1,102 @@
 [
-  "Increase the number of Black faculty, staff, teaching assistants, administrators, and advisors at the university.",
-  "Making racial bias training mandatory for all students, faculty, staff, administrators, health professionals, and student organizations. Training should include history of racial bias, impacts of racial trauma, and critical examinations how racism impacts one's life and their counterparts.",
-  "Reevaluate and reduce the excessive funding to UMPD publicly. Redistribute these funds and resources to Black organizations on campus, Nyumburu Cultural Center, and the African American studies department.",
-  "Immediate response to hate speech or actions from the university including a consequence (e.g: mark on the transcript or potential suspension)",
-  "Increase the number of BIPOC counselors represented within the Counseling Center and Health Center, especially those with experiences with discrimination.",
-  "Prioritizing minority enrollment by doubling the current enrollment of Black students from Prince George’s County and DC by 2025.",
-  "Create a Black career center (in Nyumburu or a new center) to better expose Black students to scholarships, conferences, and internships that value Black people.",
-  "Memorialize 1st Lt. Richard Collins III with a physical memorial in a visible location where all of the UMD community can participate in his remembrance.",
-  "Holding the administration accountable and ensuring transparency in following through on these demands along with the initiatives President Pines is taking in order to create equity for our Black community",
-  "Create an oversight committee that evaluates and sanctions faculty members who have allegedly taken part in any discriminatory behavior towards undergraduate and graduate students",
-  "Creating more spaces on campus for Black students (such as the Black Engineers Society Lounge in the Engineering Building) so that they are not only relegated to Nyumburu by default (especially for LGBT Black students). These spaces will be non-discriminatory.",
-  "Create partnerships and scholarships with Prince George’s County schools to increase the number of Prince George’s County students accepted and admitted to UMD, especially Black students.",
-  "End the militarization of UMPD and sanctioning safe residential halls and environments by removing armed police & decreasing their presence.",
-  "Continuous mandatory training on implicit bias in policing and how to reduce its negative impacts on the UMD community.",
-  "Divest from the Maryland Correctional Enterprises, as well as businesses and companies invested in it, and the prison industrial complex",
-  "Immediate turnaround for the removal of hate speech printed or written on campus property, sidewalks, and boards.",
-  "Creating a racial incident hotline through the Counseling Center to cater to the mental health of BIPOC students.",
-  "Establish a collaboration between Nyumburu and the Division of Student Affairs to streamline all resources and counseling services that exist to support Black students.",
-  "Improving and restoring relations between UMD and Prince George's County through directly partnering with local community leaders/activists and community organizations.",
-  "Include teaching about the contributions that Prince George’s County residents have made to UMD, along with the Black history of this institution (ties to slavery, discrimination against Black people to admittance into UMD until the 1936 Murray v Maryland Decision).",
-  "A land recognition that UMD is built on land stolen from the Piscataway people.",
-  "Make continued reference to 1st Lt. Richard Collins' legacy, accomplishments, and the Richard W Collins III Leadership with Honor Scholarship on campus tours and orientation, and in general education courses.",
-  "Strengthening the Bias Incident Support Services office with at least 3 more employees to support in responding, educating, and reporting to the campus about hate-bias incidents.",
-  "Implementation of evaluations pertaining to diversity and inclusivity for each course to be completed by students every semester. This is in regards to specific colleges and the university as a whole and the results of these evaluations should be published for transparency.",
-  "TerrapinSTRONG (or any other general orientation process that UMD goes with) needs to incorporate the provision of accurate resources to all students on bias incident reporting, counseling services, and other resources for BIPOC students."
+  {
+    "header": "Increase the number of Black faculty, staff, teaching assistants, administrators, and advisors at the university.",
+    "picturePath": "/illustrations/undergraduate-demands/demand1.jpg"
+  },
+  {
+    "header": "Making racial bias training mandatory for all students, faculty, staff, administrators, health professionals, and student organizations. Training should include history of racial bias, impacts of racial trauma, and critical examinations how racism impacts one's life and their counterparts.",
+    "picturePath": "/illustrations/undergraduate-demands/demand2.jpg"
+  },
+  {
+    "header": "Reevaluate and reduce the excessive funding to UMPD publicly. Redistribute these funds and resources to Black organizations on campus, Nyumburu Cultural Center, and the African American studies department.",
+    "picturePath": "/illustrations/undergraduate-demands/demand3.jpg"
+  },
+  {
+    "header": "Immediate response to hate speech or actions from the university including a consequence (e.g: mark on the transcript or potential suspension)",
+    "picturePath": "/illustrations/undergraduate-demands/demand4.jpg"
+  },
+  {
+    "header": "Increase the number of BIPOC counselors represented within the Counseling Center and Health Center, especially those with experiences with discrimination.",
+    "picturePath": "/illustrations/undergraduate-demands/demand5.jpg"
+  },
+  {
+    "header": "Prioritizing minority enrollment by doubling the current enrollment of Black students from Prince George’s County and DC by 2025.",
+    "picturePath": "/illustrations/undergraduate-demands/demand6.jpg"
+  },
+  {
+    "header": "Create a Black career center (in Nyumburu or a new center) to better expose Black students to scholarships, conferences, and internships that value Black people.",
+    "picturePath": "/illustrations/undergraduate-demands/demand7.jpg"
+  },
+  {
+    "header": "Memorialize 1st Lt. Richard Collins III with a physical memorial in a visible location where all of the UMD community can participate in his remembrance.",
+    "picturePath": "/illustrations/undergraduate-demands/demand8.jpg"
+  },
+  {
+    "header": "Holding the administration accountable and ensuring transparency in following through on these demands along with the initiatives President Pines is taking in order to create equity for our Black community",
+    "picturePath": "/illustrations/undergraduate-demands/demand9.jpg"
+  },
+  {
+    "header": "Create an oversight committee that evaluates and sanctions faculty members who have allegedly taken part in any discriminatory behavior towards undergraduate and graduate students",
+    "picturePath": "/illustrations/undergraduate-demands/demand10.jpg"
+  },
+  {
+    "header": "Creating more spaces on campus for Black students (such as the Black Engineers Society Lounge in the Engineering Building) so that they are not only relegated to Nyumburu by default (especially for LGBT Black students). These spaces will be non-discriminatory.",
+    "picturePath": "/illustrations/undergraduate-demands/demand11.jpg"
+  },
+  {
+    "header": "Create partnerships and scholarships with Prince George’s County schools to increase the number of Prince George’s County students accepted and admitted to UMD, especially Black students.",
+    "picturePath": "/illustrations/undergraduate-demands/demand12.jpg"
+  },
+  {
+    "header": "End the militarization of UMPD and sanctioning safe residential halls and environments by removing armed police & decreasing their presence.",
+    "picturePath": "/illustrations/undergraduate-demands/demand13.jpg"
+  },
+  {
+    "header": "Continuous mandatory training on implicit bias in policing and how to reduce its negative impacts on the UMD community.",
+    "picturePath": "/illustrations/undergraduate-demands/demand14.jpg"
+  },
+  {
+    "header": "Divest from the Maryland Correctional Enterprises, as well as businesses and companies invested in it, and the prison industrial complex",
+    "picturePath": "/illustrations/undergraduate-demands/demand15.jpg"
+  },
+  {
+    "header": "Immediate turnaround for the removal of hate speech printed or written on campus property, sidewalks, and boards.",
+    "picturePath": "/illustrations/undergraduate-demands/demand16.jpg"
+  },
+  {
+    "header": "Creating a racial incident hotline through the Counseling Center to cater to the mental health of BIPOC students.",
+    "picturePath": "/illustrations/undergraduate-demands/demand17.jpg"
+  },
+  {
+    "header": "Establish a collaboration between Nyumburu and the Division of Student Affairs to streamline all resources and counseling services that exist to support Black students.",
+    "picturePath": "/illustrations/undergraduate-demands/demand18.jpg"
+  },
+  {
+    "header": "Improving and restoring relations between UMD and Prince George's County through directly partnering with local community leaders/activists and community organizations.",
+    "picturePath": "/illustrations/undergraduate-demands/demand19.jpg"
+  },
+  {
+    "header": "Include teaching about the contributions that Prince George’s County residents have made to UMD, along with the Black history of this institution (ties to slavery, discrimination against Black people to admittance into UMD until the 1936 Murray v Maryland Decision).",
+    "picturePath": "/illustrations/undergraduate-demands/demand20.jpg"
+  },
+  {
+    "header": "A land recognition that UMD is built on land stolen from the Piscataway people.",
+    "picturePath": "/illustrations/undergraduate-demands/demand21.jpg"
+  },
+  {
+    "header": "Make continued reference to 1st Lt. Richard Collins' legacy, accomplishments, and the Richard W Collins III Leadership with Honor Scholarship on campus tours and orientation, and in general education courses.",
+    "picturePath": "/illustrations/undergraduate-demands/demand22.jpg"
+  },
+  {
+    "header": "Strengthening the Bias Incident Support Services office with at least 3 more employees to support in responding, educating, and reporting to the campus about hate-bias incidents.",
+    "picturePath": "/illustrations/undergraduate-demands/demand23.jpg"
+  },
+  {
+    "header": "Implementation of evaluations pertaining to diversity and inclusivity for each course to be completed by students every semester. This is in regards to specific colleges and the university as a whole and the results of these evaluations should be published for transparency.",
+    "picturePath": "/illustrations/undergraduate-demands/demand24.jpg"
+  },
+  {
+    "header": "TerrapinSTRONG (or any other general orientation process that UMD goes with) needs to incorporate the provision of accurate resources to all students on bias incident reporting, counseling services, and other resources for BIPOC students.",
+    "picturePath": "/illustrations/undergraduate-demands/demand25.jpg"
+  }
 ]

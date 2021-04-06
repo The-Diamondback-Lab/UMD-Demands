@@ -1,5 +1,7 @@
 import axios from 'axios';
 
+const ASSETS_URL = process.env.REACT_APP_ASSETS_URL;
+
 /**
  * Fetches all relevant data needed to render the application
  */
@@ -18,7 +20,8 @@ export async function fetchAllData() {
   let promises = [
     fetchBiographies(),
     fetchDemands('graduate'),
-    fetchDemands('undergraduate')
+    fetchDemands('undergraduate'),
+    fetchCredits()
   ];
   let results = await Promise.all(promises);
 
@@ -28,10 +31,15 @@ export async function fetchAllData() {
   let o = {
     biographies: results[0],
     graduateDemands: results[1],
-    undergraduateDemands: results[2]
+    undergraduateDemands: results[2],
+    credits: results[3]
   };
 
   return o;
+}
+
+async function fetchCredits() {
+  return (await axios.get('/data/credits.json')).data;
 }
 
 /**
@@ -41,9 +49,19 @@ export async function fetchAllData() {
  */
 async function fetchBiographies() {
   let resp = await axios.get('/data/biographies.json');
-  // TODO typedef for this response
   /** @type {BiographyData[]} */
-  return resp.data;
+  let bios = resp.data;
+
+  return bios.map(obj => {
+    let newObj = Object.assign({}, obj);
+
+    newObj.picturePath = ASSETS_URL + obj.picturePath;
+    if (obj.gallery) {
+      newObj.gallery = obj.gallery.map(s => ASSETS_URL + s);
+    }
+
+    return newObj;
+  });
 }
 
 /**
@@ -81,7 +99,11 @@ async function fetchDemands(type) {
     return paragraphs.map(para => `<p>${para}</p>`).join('\n');
   });
 
-  return headers.map((header, i) => ({header, body: bodies[i]}));
+  return headers.map((o, i) => ({
+    header: o.header,
+    picturePath: ASSETS_URL + o.picturePath,
+    body: bodies[i]
+  }));
 }
 
 /**
@@ -95,6 +117,7 @@ async function fetchDemands(type) {
 /**
  * @typedef DemandData
  * @prop {string} header
+ * @prop {string} picturePath
  * @prop {string} body
  */
 
