@@ -15,7 +15,7 @@ export default function Biographies(props) {
 
   return (
     <div id="bio-container">
-      <h1>Meet the Organizers</h1>
+      <h1>Meet the Student Leaders</h1>
       <div id="bio-elems">{elems}</div>
     </div>
   );

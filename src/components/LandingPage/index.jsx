@@ -7,7 +7,7 @@ class LandingPage extends Component {
     return (
       <div id="landing">
         <div id="landing-title-container">
-          <h1>DEMANDS</h1>
+          <h1>BEHIND THE DEMANDS</h1>
         </div>
       </div>
     )
