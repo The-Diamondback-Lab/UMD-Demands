@@ -68,7 +68,18 @@ async function fetchDemands(type) {
   let bodyResponses = await Promise.all(
     headers.map((_, i) => axios.get(`${prefix}/demand${i+1}.html`)));
   /** @type {string[]} */
-  let bodies = bodyResponses.map(r => r.data);
+  let bodies = bodyResponses.map(r => {
+    /** @type {string} */
+    let rawContent = r.data;
+    let paragraphs = rawContent
+      .replace(/“/gi, '&ldquo;') // Fixing left "fancy" quotes
+      .replace(/”/gi, '&rdquo;') // Fixing right "fancy" quotes
+      .replace(/’/gi, '&rsquo;') // Fixing "fancy" apostrophes
+      .split(/\r?\n/gi) // Splitting by lines
+      .filter(x => x.length); // Removing empty lines
+
+    return paragraphs.map(para => `<p>${para}</p>`).join('\n');
+  });
 
   return headers.map((header, i) => ({header, body: bodies[i]}));
 }
