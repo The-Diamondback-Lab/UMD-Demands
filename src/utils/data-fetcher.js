@@ -17,27 +17,19 @@ export async function fetchAllData() {
   //   - Based on the length of array in headers.json,
   //     fetch /data/graduate/demand{i}.html
 
-  let promises = [
-    fetchBiographies(),
-    fetchDemands('graduate'),
-    fetchDemands('undergraduate'),
-    fetchCredits(),
-    fetchIntro()
-  ];
-  let results = await Promise.all(promises);
-
-  /**
-   * @type {AllResults}
-   */
-  let o = {
-    biographies: results[0],
-    graduateDemands: results[1],
-    undergraduateDemands: results[2],
-    credits: results[3],
-    intro: results[4]
+  let objOfPromises = {
+    intro: fetchIntro(),
+    biographies: fetchBiographies(),
+    graduateDemands: fetchDemands('graduate'),
+    undergraduateDemands: fetchDemands('undergraduate'),
+    credits: fetchCredits()
   };
+  let retObj = {};
+  for (let k in objOfPromises) {
+    retObj[k] = await objOfPromises[k];
+  }
 
-  return o;
+  return retObj;
 }
 
 /**
