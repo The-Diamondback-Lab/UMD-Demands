@@ -80,18 +80,16 @@ export default class App extends Component {
           <div
             className="intro"
             dangerouslySetInnerHTML={{__html: data.intro}} />
-          <Biographies data={data.biographies}/>
+          <Biographies data={data.biographies} />
           <DemandList
             data={data.undergraduateDemands}
-            header="Undergraduate Demands"
-            resourceUrl="/data/undergraduate-demands.json" />
+            header="25 Demands" />
           <DemandList
             data={data.graduateDemands}
-            header="Graduate Demands"
-            resourceUrl="/data/graduate-demands.json"
+            header="UMD BLK Grads For BLK Lives Demands"
             theme="white" />
         </div>
-        <Footer credits={data.credits}/>
+        <Footer credits={data.credits} />
       </Fragment>
     );
   }
