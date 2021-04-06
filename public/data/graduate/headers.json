@@ -1,8 +1,26 @@
 [
-  "Honoring Black Life",
-  "Divestment and Transparency",
-  "Admission and Recruitment",
-  "Funding",
-  "Teaching and Researching",
-  "Faculty Retention and Hiring"
+  {
+    "header": "Honoring Black Life",
+    "picturePath": "/illustrations/graduate-demands/demand1.jpg"
+  },
+  {
+    "header": "Divestment and Transparency",
+    "picturePath": "/illustrations/graduate-demands/demand2.jpg"
+  },
+  {
+    "header": "Admission and Recruitment",
+    "picturePath": "/illustrations/graduate-demands/demand3.jpg"
+  },
+  {
+    "header": "Funding",
+    "picturePath": "/illustrations/graduate-demands/demand4.jpg"
+  },
+  {
+    "header": "Teaching and Researching",
+    "picturePath": "/illustrations/graduate-demands/demand5.jpg"
+  },
+  {
+    "header": "Faculty Retention and Hiring",
+    "picturePath": "/illustrations/graduate-demands/demand6.jpg"
+  }
 ]
