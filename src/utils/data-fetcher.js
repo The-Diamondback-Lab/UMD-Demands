@@ -20,7 +20,8 @@ export async function fetchAllData() {
   let promises = [
     fetchBiographies(),
     fetchDemands('graduate'),
-    fetchDemands('undergraduate')
+    fetchDemands('undergraduate'),
+    fetchCredits()
   ];
   let results = await Promise.all(promises);
 
@@ -30,10 +31,15 @@ export async function fetchAllData() {
   let o = {
     biographies: results[0],
     graduateDemands: results[1],
-    undergraduateDemands: results[2]
+    undergraduateDemands: results[2],
+    credits: results[3]
   };
 
   return o;
+}
+
+async function fetchCredits() {
+  return (await axios.get('/data/credits.json')).data;
 }
 
 /**

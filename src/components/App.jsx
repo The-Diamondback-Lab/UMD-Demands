@@ -4,6 +4,7 @@ import { fetchAllData } from '../utils/data-fetcher';
 import Biographies from './Biographies';
 import LandingPage from './LandingPage';
 import DemandList from './DemandList';
+import Footer from './Footer';
 
 export default class App extends Component {
   constructor(props) {
@@ -59,6 +60,7 @@ export default class App extends Component {
             resourceUrl="/data/graduate-demands.json"
             theme="white" />
         </div>
+        <Footer credits={data.credits}/>
       </Fragment>
     );
   }
