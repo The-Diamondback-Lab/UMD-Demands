@@ -1,26 +1,32 @@
 [
   {
     "header": "Honoring Black Life",
-    "picturePath": "/illustrations/graduate-demands/graddemand1.jpg"
+    "picturePath": "/illustrations/graduate-demands/graddemand1.jpg",
+    "caption": "Illustration by Clara Longo de Freitas/The Diamondback, photo by Julia Nikhinson/The Diamondback"
   },
   {
     "header": "Divestment and Transparency",
-    "picturePath": "/illustrations/graduate-demands/graddemand2.jpg"
+    "picturePath": "/illustrations/graduate-demands/graddemand2.jpg",
+    "caption": "Illustration by Clara Longo de Freitas/The Diamondback"
   },
   {
     "header": "Admission and Recruitment",
-    "picturePath": "/illustrations/graduate-demands/graddemand3.jpg"
+    "picturePath": "/illustrations/graduate-demands/graddemand3.jpg",
+    "caption": "Illustration by Clara Longo de Freitas/The Diamondback"
   },
   {
     "header": "Funding",
-    "picturePath": "/illustrations/graduate-demands/graddemand4.jpg"
+    "picturePath": "/illustrations/graduate-demands/graddemand4.jpg",
+    "caption": "Illustration by Julia Nikhinson/The Diamondback"
   },
   {
     "header": "Teaching and Researching",
-    "picturePath": "/illustrations/graduate-demands/graddemand5.jpg"
+    "picturePath": "/illustrations/graduate-demands/graddemand5.jpg",
+    "caption": "Illustration by Clara Longo de Freitas/The Diamondback"
   },
   {
     "header": "Faculty Retention and Hiring",
-    "picturePath": "/illustrations/graduate-demands/graddemand6.jpg"
+    "picturePath": "/illustrations/graduate-demands/graddemand6.jpg",
+    "caption": "Illustration by Clara Longo de Freitas/The Diamondback"
   }
 ]

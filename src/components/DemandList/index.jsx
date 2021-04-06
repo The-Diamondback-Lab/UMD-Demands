@@ -1,10 +1,9 @@
+/* eslint-disable jsx-a11y/alt-text */
+
 import { Accordion, Card } from 'react-bootstrap';
-import { LoremIpsum } from 'lorem-ipsum';
 import { Component, Fragment } from 'react';
 
 import './styles.css';
-
-const lorem = new LoremIpsum();
 
 export default class DemandList extends Component {
   render() {
@@ -15,8 +14,11 @@ export default class DemandList extends Component {
     let listClassNames = listClasses.join(' ');
 
     let elems = this.props.data.map((o, i) => {
-      let imgHtml = `<img src="${o.picturePath}"></img>`;
-      let bodyHtml = [imgHtml, o.body || lorem.generateSentences(10)].join('');
+      let illustration = <div className="illustration-container">
+        <img src={o.picturePath} />
+        <p className="caption">{o.caption}</p>
+      </div>;
+      let bodyElem = <div dangerouslySetInnerHTML={{ __html: o.body }}></div>;
 
       return (
         <div key={`demand-list-item-${i+1}`} className="item">
@@ -28,7 +30,9 @@ export default class DemandList extends Component {
               </Accordion.Toggle>
 
               <Accordion.Collapse eventKey={`${i+1}`}>
-                <Card.Body dangerouslySetInnerHTML={{__html: bodyHtml}}>
+                <Card.Body>
+                  {illustration}
+                  {bodyElem}
                 </Card.Body>
               </Accordion.Collapse>
             </Card>

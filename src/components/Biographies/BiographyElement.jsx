@@ -1,10 +1,7 @@
 import { useState } from 'react';
-import { LoremIpsum } from 'lorem-ipsum';
 
 import BiographyImage from './BiographyImage';
 import BiographyModal from './BiographyModal';
-
-const lorem = new LoremIpsum();
 
 /**
  * @param {BiographyElementProps} props
@@ -26,7 +23,7 @@ export default function BiographyElement(props) {
         onHide={onClose}
         show={modalShow}
         title={props.name}
-        body={props.body || lorem.generateSentences(15)}
+        body={props.body}
         gallery={props.gallery} />
     </div>
   )

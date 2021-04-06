@@ -93,7 +93,6 @@ async function fetchDemands(type) {
   // Fetching all demand bodies
   let bodyResponses = await Promise.all(
     headers.map((_, i) => axios.get(`${prefix}/demand${i+1}.html`)));
-  /** @type {string[]} */
   let bodies = bodyResponses.map(r => {
     /** @type {string} */
     let rawContent = r.data;
@@ -111,6 +110,7 @@ async function fetchDemands(type) {
   return headers.map((o, i) => ({
     header: o.header,
     picturePath: ASSETS_URL + o.picturePath,
+    caption: o.caption,
     body: bodies[i]
   }));
 }
@@ -127,6 +127,7 @@ async function fetchDemands(type) {
  * @typedef DemandData
  * @prop {string} header
  * @prop {string} picturePath
+ * @prop {string} caption
  * @prop {string} body
  */
 

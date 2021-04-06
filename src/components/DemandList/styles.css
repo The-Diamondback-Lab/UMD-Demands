@@ -60,13 +60,25 @@
   line-height: 1.75em;
 }
 
-.demand-list .card-body img {
+.card-body .illustration-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-body .illustration-container img {
   width: 100%;
   height: auto;
   max-height: 300px;
   object-fit: contain;
 
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
+}
+
+.card-body .illustration-container p.caption {
+  font-size: 0.8em;
+  color: gray;
+  font-style: italic;
 }
 
 .demand-list .card-body a {
