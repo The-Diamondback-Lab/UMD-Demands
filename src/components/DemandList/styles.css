@@ -60,6 +60,10 @@
   line-height: 1.75em;
 }
 
+.demand-list .card-body a {
+  color: #e21833;
+}
+
 /* WHITE THEME */
 
 .demand-list.white .item .title {
