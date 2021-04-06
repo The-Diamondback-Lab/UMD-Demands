@@ -1,0 +1,31 @@
+footer {
+  font-size: 1.5em;
+  font-family: 'Solano Gothic BD', sans-serif;
+  padding: 0.75em;
+  color: white;
+  background-color: #e21833;
+}
+
+footer > div.credits {
+  margin: 0.25em 0.5em;
+}
+
+footer > div.credits > p {
+  font-size: 1.5em;
+  line-height: normal;
+  margin: 0;
+}
+
+footer > * {
+  margin: 0.5em;
+}
+
+footer > p {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+.footer-logo {
+  margin: 0.5em 0;
+  height: 1.75em;
+}
