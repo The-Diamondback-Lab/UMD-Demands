@@ -53,9 +53,6 @@ export default class DemandList extends Component {
     }
     let listClassNames = listClasses.join(' ');
 
-    // let flourishScript = <script src="https://public.flourish.studio/resources/embed.js"></script>;
-    // let a = <div className="flourish-embed flourish-chart" data-src="visualisation/5741928">{flourishScript}</div>;
-
     let elems = this.props.data.map((o, demandInd) => {
       let illustration = <div className="illustration-container">
         <img src={o.picturePath} />

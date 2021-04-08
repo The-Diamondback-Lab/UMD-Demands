@@ -6,6 +6,7 @@ const FLOURSIH_EMBED_PREFIX = '$$DBK_PREFIX__FLOURISH_EMBED$$';
 
 /**
  * Fetches all relevant data needed to render the application
+ * @returns {Promise<AllResults>}
  */
 export async function fetchAllData() {
   // If filenames are "enumerated" (i.e. dog1.jpg, dog2.jpg, etc), then the
