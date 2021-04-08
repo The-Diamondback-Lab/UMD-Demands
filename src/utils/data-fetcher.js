@@ -2,8 +2,6 @@ import axios from 'axios';
 
 const ASSETS_URL = process.env.REACT_APP_ASSETS_URL;
 
-const FLOURSIH_EMBED_PREFIX = '$$DBK_PREFIX__FLOURISH_EMBED$$';
-
 /**
  * Fetches all relevant data needed to render the application
  * @returns {Promise<AllResults>}
@@ -93,16 +91,14 @@ async function fetchDemands(type) {
   /** @type {string[]} */
   let headers = resp.data;
 
-  let foobar = await Promise.all(
+  let bodies = await Promise.all(
     headers.map((_, i) => fetchDemandInfo(`${prefix}/demand${i+1}.html`)));
 
   return headers.map((obj, i) => ({
     header: obj.header,
     picturePath: ASSETS_URL + obj.picturePath,
     caption: obj.caption,
-    body: foobar[i].body,
-    flourishEmbeds: foobar[i].flourishEmbeds,
-    bodyParagraphs: foobar[i].bodyParagraphs
+    body: bodies[i]
   }));
 }
 
@@ -119,25 +115,9 @@ async function fetchDemandInfo(demandUrl) {
     .split(/\r?\n/gi) // Splitting by lines
     .filter(x => x.length); // Removing empty lines
 
-  let bodyParagraphs = [];
-  let flourishEmbeds = [];
+  let body = lines.map(x => `<p>${x}</p>`).join(' ');
 
-  lines.forEach((line, lineNum) => {
-    // If this line is a flourish embed, DO NOT add it to the body html string
-    if (line.startsWith(FLOURSIH_EMBED_PREFIX)) {
-      let dataSrc = line.split(FLOURSIH_EMBED_PREFIX)[1];
-      flourishEmbeds.push({ dataSrc, index: lineNum });
-      return '';
-    } else {
-      bodyParagraphs.push(line);
-    }
-  });
-
-  return {
-    body: '',
-    bodyParagraphs,
-    flourishEmbeds
-  };
+  return body;
 }
 
 /**
@@ -154,7 +134,6 @@ async function fetchDemandInfo(demandUrl) {
  * @prop {string} picturePath
  * @prop {string} caption
  * @prop {string} body
- * @prop {[{embedSrc: string, index: number}]} flourishEmbeds
  */
 
 /**
